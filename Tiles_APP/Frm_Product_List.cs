@@ -68,7 +68,7 @@ namespace Tiles_APP
 
             dr.Close();
 
-            Tiles_App_Sherard_Content.Bind_Grid(dgv_Product_List, "Select * From Product_Details where Category_Name = '" + cmb_Subcategory_Name.Text + "'");
+            Tiles_App_Sherard_Content.Bind_Grid(dgv_Product_List, "Select * From Product_Details where Category_Name = '" + Cmb_Category_Name.Text + "'");
             Tiles_App_Sherard_Content.Con_Close();
         }
 

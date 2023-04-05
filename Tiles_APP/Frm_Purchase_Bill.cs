@@ -228,6 +228,8 @@ namespace Tiles_APP
         {
             if (tb_Purchase_ID.Text != "" && Cmb_Supplier_Name.Text != "" && tb_Total_Amount.Text != "" && tb_Paying_Amount.Text != "" && tb_Balance_Amount.Text != "")
             {
+                int Purchase_Id = Convert.ToInt32(tb_Purchase_ID.Text);
+
                 Tiles_App_Sherard_Content.Con_Open();
 
                 SqlCommand cmd = new SqlCommand("Insert Into Purchase_Bill_Details Values (@P_ID,@S_Name,@Disc,@GST,@Total_Bill,@Paid_Bill,@Balance_Amount,@Purchase_Date)", Tiles_App_Sherard_Content.Con);
@@ -246,7 +248,11 @@ namespace Tiles_APP
 
                 for (int i = 0; i <= dgv_Purchase_Details.Rows.Count - 1; i++)
                 {
-                    SqlCommand cmd1 = new SqlCommand("Insert Into Purchase_Details Values (@P_ID,@Cat,@SubCat,@Product_Name,@Quantity,@Purchase_Unit,@Purchase_Price,@sale_Price,@Total)", Tiles_App_Sherard_Content.Con);
+                    int CStock = 0;
+
+                    SqlCommand cmd1 = new SqlCommand();
+                    cmd1.CommandText = "Insert Into Purchase_Details Values (@P_ID,@Cat,@SubCat,@Product_Name,@Quantity,@Purchase_Unit,@Purchase_Price,@sale_Price,@Total)";
+                    cmd1.Connection = Tiles_App_Sherard_Content.Con;
 
                     cmd1.Parameters.Add("@P_ID", SqlDbType.Int).Value = tb_Purchase_ID.Text;
                     cmd1.Parameters.Add("@Cat", SqlDbType.VarChar).Value = dgv_Purchase_Details.Rows[i].Cells[1].Value;
@@ -261,6 +267,33 @@ namespace Tiles_APP
                     cmd1.ExecuteNonQuery();
                     cmd1.Dispose();
 
+                    cmd1.CommandText = "Select Stock_Quantity from Product_Details where Category_Name = @Cat1 And Subcategory_Name = @SubCat1 And Product_Name = @Product_Name1";
+                    cmd1.Connection = Tiles_App_Sherard_Content.Con;
+
+                    cmd1.Parameters.Add("@Cat1", SqlDbType.VarChar).Value = dgv_Purchase_Details.Rows[i].Cells[1].Value;
+                    cmd1.Parameters.Add("@SubCat1", SqlDbType.NVarChar).Value = dgv_Purchase_Details.Rows[i].Cells[2].Value;
+                    cmd1.Parameters.Add("@Product_Name1", SqlDbType.VarChar).Value = dgv_Purchase_Details.Rows[i].Cells[3].Value;
+
+                    SqlDataReader Dr = cmd1.ExecuteReader();
+
+                    if (Dr.Read())
+                    {
+                        CStock = Convert.ToInt32((Dr["Stock_Quantity"].ToString())) + Convert.ToInt32(dgv_Purchase_Details.Rows[i].Cells[4].Value) ;
+                    }
+
+                    cmd1.Dispose();
+                    Dr.Close();
+
+                    cmd1.CommandText = "Update Product_Details Set Stock_Quantity = @Qty WHERE Category_Name = @Cat2 And Subcategory_Name = @SubCat2 And Product_Name = @Product_Name2 ";
+                    cmd1.Connection = Tiles_App_Sherard_Content.Con;
+
+                    cmd1.Parameters.Add("@Cat2", SqlDbType.VarChar).Value = dgv_Purchase_Details.Rows[i].Cells[1].Value;
+                    cmd1.Parameters.Add("@SubCat2", SqlDbType.NVarChar).Value = dgv_Purchase_Details.Rows[i].Cells[2].Value;
+                    cmd1.Parameters.Add("@Product_Name2", SqlDbType.VarChar).Value = dgv_Purchase_Details.Rows[i].Cells[3].Value;
+                    cmd1.Parameters.Add("@Qty", SqlDbType.Int).Value = CStock;
+
+                    cmd1.ExecuteNonQuery();
+                    cmd1.Dispose();
                 }
                 /// Insert Data Into Purchase Payment
 
@@ -277,7 +310,21 @@ namespace Tiles_APP
 
                 MessageBox.Show("Purchase Details Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear_Control();
-           }
+                if (Purchase_Id > 0)
+                {
+                    Reports.Report_Forms.Frm_Purchase_Challan frm = new Reports.Report_Forms.Frm_Purchase_Challan();
+                    frm.showREport(Purchase_Id);
+                    frm.Show();
+
+                }
+
+                /* if (!string.IsNullOrEmpty(tb_Purchase_ID.Text))
+                 {
+                     Frm_Purchase_Report report = new Frm_Purchase_Report();
+                     report.showREport(Convert.ToInt32(tb_Purchase_ID.Text));
+                     report.Show();
+                 }*/
+            }
             else
             {
                 MessageBox.Show("Fill Product & Purchase Details Properly", "Incomplete Information", MessageBoxButtons.OK, MessageBoxIcon.Error);

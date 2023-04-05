@@ -48,13 +48,14 @@
             this.Cmb_Category_Name = new System.Windows.Forms.ComboBox();
             this.Cmb_Stock_Unit = new System.Windows.Forms.ComboBox();
             this.Cmb_Supplier_Name = new System.Windows.Forms.ComboBox();
+            this.btn_Update_Product_Details = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Save
             // 
             this.btn_Save.BackColor = System.Drawing.Color.LightSalmon;
-            this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(628, 590);
+            this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.Location = new System.Drawing.Point(411, 588);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(157, 71);
@@ -157,9 +158,12 @@
             this.dtp_Date.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Date.Location = new System.Drawing.Point(905, 60);
             this.dtp_Date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtp_Date.MaxDate = new System.DateTime(2023, 1, 10, 0, 0, 0, 0);
+            this.dtp_Date.MinDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             this.dtp_Date.Name = "dtp_Date";
             this.dtp_Date.Size = new System.Drawing.Size(321, 39);
             this.dtp_Date.TabIndex = 6;
+            this.dtp_Date.Value = new System.DateTime(2023, 1, 10, 0, 0, 0, 0);
             // 
             // lbl_Date
             // 
@@ -260,6 +264,19 @@
             this.Cmb_Supplier_Name.Size = new System.Drawing.Size(368, 39);
             this.Cmb_Supplier_Name.TabIndex = 5;
             // 
+            // btn_Update_Product_Details
+            // 
+            this.btn_Update_Product_Details.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_Update_Product_Details.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update_Product_Details.Location = new System.Drawing.Point(690, 588);
+            this.btn_Update_Product_Details.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Update_Product_Details.Name = "btn_Update_Product_Details";
+            this.btn_Update_Product_Details.Size = new System.Drawing.Size(397, 71);
+            this.btn_Update_Product_Details.TabIndex = 71;
+            this.btn_Update_Product_Details.Text = "Update Product Details";
+            this.btn_Update_Product_Details.UseVisualStyleBackColor = false;
+            this.btn_Update_Product_Details.Click += new System.EventHandler(this.btn_Update_Product_Details_Click);
+            // 
             // Frm_Add_New_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,6 +284,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1285, 703);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Update_Product_Details);
             this.Controls.Add(this.Cmb_Supplier_Name);
             this.Controls.Add(this.Cmb_Stock_Unit);
             this.Controls.Add(this.cmb_Subcategory_Name);
@@ -318,5 +336,6 @@
         private System.Windows.Forms.ComboBox Cmb_Category_Name;
         private System.Windows.Forms.ComboBox Cmb_Stock_Unit;
         private System.Windows.Forms.ComboBox Cmb_Supplier_Name;
+        private System.Windows.Forms.Button btn_Update_Product_Details;
     }
 }

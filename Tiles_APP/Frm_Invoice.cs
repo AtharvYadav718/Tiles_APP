@@ -274,6 +274,8 @@ namespace Tiles_APP
         {
             if (tb_Invoice_No.Text != "" && tb_Customer_ID.Text != "" && tb_Customer_Name.Text != "" && tb_Total_Amount.Text != "" && tb_Paying_Amount.Text != "" && tb_Balance_Amount.Text != "")
             {
+                int invoiceId = Convert.ToInt32(tb_Invoice_No.Text);
+
                 Tiles_App_Sherard_Content.Con_Open();
 
                 SqlCommand cmd = new SqlCommand("Insert Into Invoice_Bill_Details Values (@I_ID,@Date,@Cust_ID,@Cust_Name,@Disc,@GST,@Total_Bill,@Paid_Bill,@Balance_Amount)", Tiles_App_Sherard_Content.Con);
@@ -294,6 +296,8 @@ namespace Tiles_APP
 
                 for (int i = 0; i <= dgv_Invoice_Details.Rows.Count - 1; i++)
                 {
+                     int CStock = 0;
+
                     SqlCommand cmd1 = new SqlCommand("Insert Into Invoice_Details Values (@I_ID,@Cat,@SubCat,@Product_Name,@Quantity,@Unit,@sale_Price,@Total)", Tiles_App_Sherard_Content.Con);
 
                     cmd1.Parameters.Add("@I_ID", SqlDbType.Int).Value = tb_Invoice_No.Text;
@@ -304,6 +308,34 @@ namespace Tiles_APP
                     cmd1.Parameters.Add("@Unit", SqlDbType.NVarChar).Value = dgv_Invoice_Details.Rows[i].Cells[5].Value;
                     cmd1.Parameters.Add("@sale_Price", SqlDbType.Money).Value = dgv_Invoice_Details.Rows[i].Cells[6].Value;
                     cmd1.Parameters.Add("@Total", SqlDbType.Money).Value = dgv_Invoice_Details.Rows[i].Cells[7].Value;
+
+                    cmd1.ExecuteNonQuery();
+                    cmd1.Dispose();
+
+                    cmd1.CommandText = "Select Stock_Quantity from Product_Details where Category_Name = @Cat1 And Subcategory_Name = @SubCat1 And Product_Name = @Product_Name1";
+                    cmd1.Connection = Tiles_App_Sherard_Content.Con;
+
+                    cmd1.Parameters.Add("@Cat1", SqlDbType.VarChar).Value = dgv_Invoice_Details.Rows[i].Cells[1].Value;
+                    cmd1.Parameters.Add("@SubCat1", SqlDbType.NVarChar).Value = dgv_Invoice_Details.Rows[i].Cells[2].Value;
+                    cmd1.Parameters.Add("@Product_Name1", SqlDbType.VarChar).Value = dgv_Invoice_Details.Rows[i].Cells[3].Value;
+
+                    SqlDataReader Dr = cmd1.ExecuteReader();
+
+                    if (Dr.Read())
+                    {
+                        CStock = Convert.ToInt32((Dr["Stock_Quantity"].ToString())) - Convert.ToInt32(dgv_Invoice_Details.Rows[i].Cells[4].Value);
+                    }
+
+                    cmd1.Dispose();
+                    Dr.Close();
+
+                    cmd1.CommandText = "Update Product_Details Set Stock_Quantity = @Qty WHERE Category_Name = @Cat2 And Subcategory_Name = @SubCat2 And Product_Name = @Product_Name2 ";
+                    cmd1.Connection = Tiles_App_Sherard_Content.Con;
+
+                    cmd1.Parameters.Add("@Cat2", SqlDbType.VarChar).Value = dgv_Invoice_Details.Rows[i].Cells[1].Value;
+                    cmd1.Parameters.Add("@SubCat2", SqlDbType.NVarChar).Value = dgv_Invoice_Details.Rows[i].Cells[2].Value;
+                    cmd1.Parameters.Add("@Product_Name2", SqlDbType.VarChar).Value = dgv_Invoice_Details.Rows[i].Cells[3].Value;
+                    cmd1.Parameters.Add("@Qty", SqlDbType.Int).Value = CStock;
 
                     cmd1.ExecuteNonQuery();
                     cmd1.Dispose();
@@ -323,6 +355,13 @@ namespace Tiles_APP
 
                 MessageBox.Show("Invoice Details Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear_Control();
+                if (invoiceId > 0)
+                {
+                    Reports.Report_Forms.Frm_Customer_Invoice frm = new Reports.Report_Forms.Frm_Customer_Invoice();
+                    frm.showREport(invoiceId);
+                    frm.Show();
+
+                }
 
             }
             else
@@ -348,6 +387,7 @@ namespace Tiles_APP
             tb_Paying_Amount.Clear();
             tb_Balance_Amount.Clear();
             Cmb_Payment_Mode.SelectedIndex = -1;
+            dgv_Invoice_Details.Rows.Clear();
         }
     }
 }

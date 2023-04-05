@@ -24,38 +24,6 @@ namespace Tiles_APP
             tb_Product_ID.Focus();
             tb_Product_ID.Text = Convert.ToString(Tiles_App_Sherard_Content.Auto_Incr("Product_Details", "Product_ID", 201));
         }
-        private void btn_Save_Click(object sender, EventArgs e)
-        {
-            Tiles_App_Sherard_Content.Con_Open();
-            if (tb_Product_ID.Text != "" && Cmb_Category_Name.Text != "" && cmb_Subcategory_Name.Text != "" && tb_Product_Name.Text != "" && Cmb_Supplier_Name.Text != "" && dtp_Date.Text != "" && tb_Purchase_Rate.Text != "" && tb_Sales_Rate.Text != "" && tb_Stock_Quantity.Text != "" && Cmb_Stock_Unit.Text !="")
-            {
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = Tiles_App_Sherard_Content.Con;
-                cmd.CommandText = "Insert into Product_Details(Product_ID, Category_Name,Subcategory_Name,Product_Name,Supplier_Name,Date,Purchase_Rate,Sales_Rate,Stock_Quantity,Stock_Unit) Values(@PI,@CN,@SN,@PN,@SNM,@DATE,@PR,@SR,@SQ,@SU)";
-
-                cmd.Parameters.Add("PI", SqlDbType.Int).Value = tb_Product_ID.Text;
-                cmd.Parameters.Add("CN", SqlDbType.VarChar).Value = Cmb_Category_Name.Text;
-                cmd.Parameters.Add("SN", SqlDbType.NVarChar).Value = cmb_Subcategory_Name.Text;
-                cmd.Parameters.Add("PN", SqlDbType.NVarChar).Value = tb_Product_Name.Text;
-                cmd.Parameters.Add("SNM", SqlDbType.VarChar).Value = Cmb_Supplier_Name.Text;
-                cmd.Parameters.Add("DATE", SqlDbType.Date).Value = dtp_Date.Value.Date;
-                cmd.Parameters.Add("PR", SqlDbType.Money).Value = tb_Purchase_Rate.Text;
-                cmd.Parameters.Add("SR", SqlDbType.Money).Value = tb_Sales_Rate.Text;
-                cmd.Parameters.Add("SQ", SqlDbType.Int).Value = tb_Stock_Quantity.Text;
-                cmd.Parameters.Add("SU", SqlDbType.NVarChar).Value = Cmb_Stock_Unit.Text;
-
-                cmd.ExecuteNonQuery();
-
-                MessageBox.Show("Record Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Clear_Controls();
-            }
-            else
-            {
-                MessageBox.Show("1st Fill All The Fields!!!", "Incomplete Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                
-            }
-            Tiles_App_Sherard_Content.Con_Close();
-        }
 
         void Bind_ComboBox()
         {
@@ -112,6 +80,43 @@ namespace Tiles_APP
             Tiles_App_Sherard_Content.Con_Close();
         }
 
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            Tiles_App_Sherard_Content.Con_Open();
+            if (tb_Product_ID.Text != "" && Cmb_Category_Name.Text != "" && cmb_Subcategory_Name.Text != "" && tb_Product_Name.Text != "" && Cmb_Supplier_Name.Text != "" && dtp_Date.Text != "" && tb_Purchase_Rate.Text != "" && tb_Sales_Rate.Text != "" && tb_Stock_Quantity.Text != "" && Cmb_Stock_Unit.Text !="")
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = Tiles_App_Sherard_Content.Con;
+                cmd.CommandText = "Insert into Product_Details(Product_ID, Category_Name,Subcategory_Name,Product_Name,Supplier_Name,Date,Purchase_Rate,Sales_Rate,Stock_Quantity,Stock_Unit) Values(@PI,@CN,@SN,@PN,@SNM,@DATE,@PR,@SR,@SQ,@SU)";
+
+                cmd.Parameters.Add("PI", SqlDbType.Int).Value = tb_Product_ID.Text;
+                cmd.Parameters.Add("CN", SqlDbType.VarChar).Value = Cmb_Category_Name.Text;
+                cmd.Parameters.Add("SN", SqlDbType.NVarChar).Value = cmb_Subcategory_Name.Text;
+                cmd.Parameters.Add("PN", SqlDbType.NVarChar).Value = tb_Product_Name.Text;
+                cmd.Parameters.Add("SNM", SqlDbType.VarChar).Value = Cmb_Supplier_Name.Text;
+                cmd.Parameters.Add("DATE", SqlDbType.Date).Value = dtp_Date.Value.Date;
+                cmd.Parameters.Add("PR", SqlDbType.Money).Value = tb_Purchase_Rate.Text;
+                cmd.Parameters.Add("SR", SqlDbType.Money).Value = tb_Sales_Rate.Text;
+                cmd.Parameters.Add("SQ", SqlDbType.Int).Value = tb_Stock_Quantity.Text;
+                cmd.Parameters.Add("SU", SqlDbType.NVarChar).Value = Cmb_Stock_Unit.Text;
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Record Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Clear_Controls();
+            }
+            else
+            {
+                MessageBox.Show("1st Fill All The Fields!!!", "Incomplete Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
+            }
+            Tiles_App_Sherard_Content.Con_Close();
+        }
+ 
+        private void btn_Update_Product_Details_Click(object sender, EventArgs e)
+        {
+
+        }
         private void Only_Numeric(object sender, KeyPressEventArgs e)
         {
             Tiles_App_Sherard_Content obj = new Tiles_App_Sherard_Content();
@@ -132,6 +137,6 @@ namespace Tiles_APP
             tb_Stock_Quantity.Clear();
             Cmb_Stock_Unit.SelectedIndex = -1;
           
-        }
+        }      
     }
 }

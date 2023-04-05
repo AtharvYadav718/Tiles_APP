@@ -31,14 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Menu_Form));
             this.pnl_Sidemenu = new System.Windows.Forms.Panel();
             this.pnl_Stock_Submenu = new System.Windows.Forms.Panel();
-            this.btn_Update_Product = new System.Windows.Forms.Button();
             this.btn_Product_List = new System.Windows.Forms.Button();
             this.btn_Dead_Stock = new System.Windows.Forms.Button();
             this.btn_Remaining_Stock = new System.Windows.Forms.Button();
             this.btn_Stock = new System.Windows.Forms.Button();
             this.pnl_Sale_Submenu = new System.Windows.Forms.Panel();
-            this.btn_Quotation_List = new System.Windows.Forms.Button();
-            this.btn_Quotation = new System.Windows.Forms.Button();
             this.btn_Invoice_List = new System.Windows.Forms.Button();
             this.btn_Invoice = new System.Windows.Forms.Button();
             this.btn_Sale = new System.Windows.Forms.Button();
@@ -49,7 +46,6 @@
             this.pnl_Master_Submenu = new System.Windows.Forms.Panel();
             this.btn_Add_New_Category = new System.Windows.Forms.Button();
             this.btn_Employee_Information = new System.Windows.Forms.Button();
-            this.btn_Update_Employee_Information = new System.Windows.Forms.Button();
             this.btn_Supplier_Information = new System.Windows.Forms.Button();
             this.btn_Product_Information = new System.Windows.Forms.Button();
             this.btn_Customer_Information = new System.Windows.Forms.Button();
@@ -59,7 +55,11 @@
             this.lbl_Head = new System.Windows.Forms.Label();
             this.pnl_ChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Add_New_Subcategory = new System.Windows.Forms.Button();
+            this.btn_Reports = new System.Windows.Forms.Button();
+            this.pnl_Reports_Submenu = new System.Windows.Forms.Panel();
+            this.btn_03 = new System.Windows.Forms.Button();
+            this.btn_02 = new System.Windows.Forms.Button();
+            this.btn_01 = new System.Windows.Forms.Button();
             this.pnl_Sidemenu.SuspendLayout();
             this.pnl_Stock_Submenu.SuspendLayout();
             this.pnl_Sale_Submenu.SuspendLayout();
@@ -68,11 +68,14 @@
             this.pnl_Head.SuspendLayout();
             this.pnl_ChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnl_Reports_Submenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Sidemenu
             // 
             this.pnl_Sidemenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(198)))), ((int)(((byte)(235)))));
+            this.pnl_Sidemenu.Controls.Add(this.pnl_Reports_Submenu);
+            this.pnl_Sidemenu.Controls.Add(this.btn_Reports);
             this.pnl_Sidemenu.Controls.Add(this.pnl_Stock_Submenu);
             this.pnl_Sidemenu.Controls.Add(this.btn_Stock);
             this.pnl_Sidemenu.Controls.Add(this.pnl_Sale_Submenu);
@@ -92,33 +95,15 @@
             // pnl_Stock_Submenu
             // 
             this.pnl_Stock_Submenu.BackColor = System.Drawing.Color.LightYellow;
-            this.pnl_Stock_Submenu.Controls.Add(this.btn_Update_Product);
             this.pnl_Stock_Submenu.Controls.Add(this.btn_Product_List);
             this.pnl_Stock_Submenu.Controls.Add(this.btn_Dead_Stock);
             this.pnl_Stock_Submenu.Controls.Add(this.btn_Remaining_Stock);
             this.pnl_Stock_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Stock_Submenu.Location = new System.Drawing.Point(0, 842);
+            this.pnl_Stock_Submenu.Location = new System.Drawing.Point(0, 699);
             this.pnl_Stock_Submenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_Stock_Submenu.Name = "pnl_Stock_Submenu";
-            this.pnl_Stock_Submenu.Size = new System.Drawing.Size(267, 178);
+            this.pnl_Stock_Submenu.Size = new System.Drawing.Size(267, 133);
             this.pnl_Stock_Submenu.TabIndex = 8;
-            // 
-            // btn_Update_Product
-            // 
-            this.btn_Update_Product.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Update_Product.FlatAppearance.BorderSize = 0;
-            this.btn_Update_Product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Update_Product.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update_Product.Location = new System.Drawing.Point(0, 117);
-            this.btn_Update_Product.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Update_Product.Name = "btn_Update_Product";
-            this.btn_Update_Product.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Update_Product.Size = new System.Drawing.Size(267, 39);
-            this.btn_Update_Product.TabIndex = 5;
-            this.btn_Update_Product.Text = "Update Product";
-            this.btn_Update_Product.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Update_Product.UseVisualStyleBackColor = true;
-            this.btn_Update_Product.Click += new System.EventHandler(this.btn_Update_Product_Click);
             // 
             // btn_Product_List
             // 
@@ -178,7 +163,7 @@
             this.btn_Stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Stock.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Stock.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.btn_Stock.Location = new System.Drawing.Point(0, 796);
+            this.btn_Stock.Location = new System.Drawing.Point(0, 653);
             this.btn_Stock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Stock.Name = "btn_Stock";
             this.btn_Stock.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
@@ -192,50 +177,14 @@
             // pnl_Sale_Submenu
             // 
             this.pnl_Sale_Submenu.BackColor = System.Drawing.Color.LightYellow;
-            this.pnl_Sale_Submenu.Controls.Add(this.btn_Quotation_List);
-            this.pnl_Sale_Submenu.Controls.Add(this.btn_Quotation);
             this.pnl_Sale_Submenu.Controls.Add(this.btn_Invoice_List);
             this.pnl_Sale_Submenu.Controls.Add(this.btn_Invoice);
             this.pnl_Sale_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Sale_Submenu.Location = new System.Drawing.Point(0, 625);
+            this.pnl_Sale_Submenu.Location = new System.Drawing.Point(0, 559);
             this.pnl_Sale_Submenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_Sale_Submenu.Name = "pnl_Sale_Submenu";
-            this.pnl_Sale_Submenu.Size = new System.Drawing.Size(267, 171);
+            this.pnl_Sale_Submenu.Size = new System.Drawing.Size(267, 94);
             this.pnl_Sale_Submenu.TabIndex = 6;
-            // 
-            // btn_Quotation_List
-            // 
-            this.btn_Quotation_List.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Quotation_List.FlatAppearance.BorderSize = 0;
-            this.btn_Quotation_List.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Quotation_List.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Quotation_List.Location = new System.Drawing.Point(0, 117);
-            this.btn_Quotation_List.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Quotation_List.Name = "btn_Quotation_List";
-            this.btn_Quotation_List.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Quotation_List.Size = new System.Drawing.Size(267, 39);
-            this.btn_Quotation_List.TabIndex = 3;
-            this.btn_Quotation_List.Text = "Quotation List";
-            this.btn_Quotation_List.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Quotation_List.UseVisualStyleBackColor = true;
-            this.btn_Quotation_List.Click += new System.EventHandler(this.btn_Quotation_List_Click);
-            // 
-            // btn_Quotation
-            // 
-            this.btn_Quotation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Quotation.FlatAppearance.BorderSize = 0;
-            this.btn_Quotation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Quotation.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Quotation.Location = new System.Drawing.Point(0, 78);
-            this.btn_Quotation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Quotation.Name = "btn_Quotation";
-            this.btn_Quotation.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Quotation.Size = new System.Drawing.Size(267, 39);
-            this.btn_Quotation.TabIndex = 2;
-            this.btn_Quotation.Text = "Quotation";
-            this.btn_Quotation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Quotation.UseVisualStyleBackColor = true;
-            this.btn_Quotation.Click += new System.EventHandler(this.btn_Quotation_Click);
             // 
             // btn_Invoice_List
             // 
@@ -278,7 +227,7 @@
             this.btn_Sale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Sale.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sale.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.btn_Sale.Location = new System.Drawing.Point(0, 579);
+            this.btn_Sale.Location = new System.Drawing.Point(0, 513);
             this.btn_Sale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Sale.Name = "btn_Sale";
             this.btn_Sale.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
@@ -295,7 +244,7 @@
             this.pnl_Purchase_Submenu.Controls.Add(this.btn_Purchase_Bill_List);
             this.pnl_Purchase_Submenu.Controls.Add(this.btn_Purchase_Bill);
             this.pnl_Purchase_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Purchase_Submenu.Location = new System.Drawing.Point(0, 487);
+            this.pnl_Purchase_Submenu.Location = new System.Drawing.Point(0, 421);
             this.pnl_Purchase_Submenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_Purchase_Submenu.Name = "pnl_Purchase_Submenu";
             this.pnl_Purchase_Submenu.Size = new System.Drawing.Size(267, 92);
@@ -342,7 +291,7 @@
             this.btn_Purchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Purchase.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Purchase.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.btn_Purchase.Location = new System.Drawing.Point(0, 441);
+            this.btn_Purchase.Location = new System.Drawing.Point(0, 375);
             this.btn_Purchase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Purchase.Name = "btn_Purchase";
             this.btn_Purchase.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
@@ -356,10 +305,8 @@
             // pnl_Master_Submenu
             // 
             this.pnl_Master_Submenu.BackColor = System.Drawing.Color.LightYellow;
-            this.pnl_Master_Submenu.Controls.Add(this.btn_Add_New_Subcategory);
             this.pnl_Master_Submenu.Controls.Add(this.btn_Add_New_Category);
             this.pnl_Master_Submenu.Controls.Add(this.btn_Employee_Information);
-            this.pnl_Master_Submenu.Controls.Add(this.btn_Update_Employee_Information);
             this.pnl_Master_Submenu.Controls.Add(this.btn_Supplier_Information);
             this.pnl_Master_Submenu.Controls.Add(this.btn_Product_Information);
             this.pnl_Master_Submenu.Controls.Add(this.btn_Customer_Information);
@@ -367,7 +314,7 @@
             this.pnl_Master_Submenu.Location = new System.Drawing.Point(0, 162);
             this.pnl_Master_Submenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_Master_Submenu.Name = "pnl_Master_Submenu";
-            this.pnl_Master_Submenu.Size = new System.Drawing.Size(267, 279);
+            this.pnl_Master_Submenu.Size = new System.Drawing.Size(267, 213);
             this.pnl_Master_Submenu.TabIndex = 2;
             // 
             // btn_Add_New_Category
@@ -376,7 +323,7 @@
             this.btn_Add_New_Category.FlatAppearance.BorderSize = 0;
             this.btn_Add_New_Category.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Add_New_Category.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add_New_Category.Location = new System.Drawing.Point(0, 195);
+            this.btn_Add_New_Category.Location = new System.Drawing.Point(0, 156);
             this.btn_Add_New_Category.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Add_New_Category.Name = "btn_Add_New_Category";
             this.btn_Add_New_Category.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -393,7 +340,7 @@
             this.btn_Employee_Information.FlatAppearance.BorderSize = 0;
             this.btn_Employee_Information.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Employee_Information.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Employee_Information.Location = new System.Drawing.Point(0, 156);
+            this.btn_Employee_Information.Location = new System.Drawing.Point(0, 117);
             this.btn_Employee_Information.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Employee_Information.Name = "btn_Employee_Information";
             this.btn_Employee_Information.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -403,23 +350,6 @@
             this.btn_Employee_Information.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Employee_Information.UseVisualStyleBackColor = true;
             this.btn_Employee_Information.Click += new System.EventHandler(this.btn_Employee_Information_Click);
-            // 
-            // btn_Update_Employee_Information
-            // 
-            this.btn_Update_Employee_Information.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Update_Employee_Information.FlatAppearance.BorderSize = 0;
-            this.btn_Update_Employee_Information.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Update_Employee_Information.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update_Employee_Information.Location = new System.Drawing.Point(0, 117);
-            this.btn_Update_Employee_Information.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Update_Employee_Information.Name = "btn_Update_Employee_Information";
-            this.btn_Update_Employee_Information.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Update_Employee_Information.Size = new System.Drawing.Size(267, 39);
-            this.btn_Update_Employee_Information.TabIndex = 7;
-            this.btn_Update_Employee_Information.Text = "Update Employee";
-            this.btn_Update_Employee_Information.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Update_Employee_Information.UseVisualStyleBackColor = true;
-            this.btn_Update_Employee_Information.Click += new System.EventHandler(this.btn_Update_Employee_Information_Click);
             // 
             // btn_Supplier_Information
             // 
@@ -545,22 +475,84 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_Add_New_Subcategory
+            // btn_Reports
             // 
-            this.btn_Add_New_Subcategory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Add_New_Subcategory.FlatAppearance.BorderSize = 0;
-            this.btn_Add_New_Subcategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Add_New_Subcategory.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add_New_Subcategory.Location = new System.Drawing.Point(0, 234);
-            this.btn_Add_New_Subcategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Add_New_Subcategory.Name = "btn_Add_New_Subcategory";
-            this.btn_Add_New_Subcategory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Add_New_Subcategory.Size = new System.Drawing.Size(267, 39);
-            this.btn_Add_New_Subcategory.TabIndex = 10;
-            this.btn_Add_New_Subcategory.Text = "Add New Subcategory";
-            this.btn_Add_New_Subcategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Add_New_Subcategory.UseVisualStyleBackColor = true;
-            this.btn_Add_New_Subcategory.Click += new System.EventHandler(this.btn_Add_New_Subcategory_Click);
+            this.btn_Reports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Reports.FlatAppearance.BorderSize = 0;
+            this.btn_Reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Reports.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reports.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.btn_Reports.Location = new System.Drawing.Point(0, 832);
+            this.btn_Reports.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Reports.Name = "btn_Reports";
+            this.btn_Reports.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_Reports.Size = new System.Drawing.Size(267, 46);
+            this.btn_Reports.TabIndex = 9;
+            this.btn_Reports.Text = "Reports";
+            this.btn_Reports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Reports.UseVisualStyleBackColor = true;
+            this.btn_Reports.Click += new System.EventHandler(this.btn_Reports_Click);
+            // 
+            // pnl_Reports_Submenu
+            // 
+            this.pnl_Reports_Submenu.BackColor = System.Drawing.Color.LightYellow;
+            this.pnl_Reports_Submenu.Controls.Add(this.btn_03);
+            this.pnl_Reports_Submenu.Controls.Add(this.btn_02);
+            this.pnl_Reports_Submenu.Controls.Add(this.btn_01);
+            this.pnl_Reports_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Reports_Submenu.Location = new System.Drawing.Point(0, 878);
+            this.pnl_Reports_Submenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_Reports_Submenu.Name = "pnl_Reports_Submenu";
+            this.pnl_Reports_Submenu.Size = new System.Drawing.Size(267, 138);
+            this.pnl_Reports_Submenu.TabIndex = 10;
+            // 
+            // btn_03
+            // 
+            this.btn_03.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_03.FlatAppearance.BorderSize = 0;
+            this.btn_03.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_03.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_03.Location = new System.Drawing.Point(0, 78);
+            this.btn_03.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_03.Name = "btn_03";
+            this.btn_03.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_03.Size = new System.Drawing.Size(267, 39);
+            this.btn_03.TabIndex = 4;
+            this.btn_03.Text = "Button_03";
+            this.btn_03.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_03.UseVisualStyleBackColor = true;
+            // 
+            // btn_02
+            // 
+            this.btn_02.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_02.FlatAppearance.BorderSize = 0;
+            this.btn_02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_02.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_02.Location = new System.Drawing.Point(0, 39);
+            this.btn_02.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_02.Name = "btn_02";
+            this.btn_02.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_02.Size = new System.Drawing.Size(267, 39);
+            this.btn_02.TabIndex = 1;
+            this.btn_02.Text = "Button_02";
+            this.btn_02.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_02.UseVisualStyleBackColor = true;
+            // 
+            // btn_01
+            // 
+            this.btn_01.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_01.FlatAppearance.BorderSize = 0;
+            this.btn_01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_01.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_01.Location = new System.Drawing.Point(0, 0);
+            this.btn_01.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_01.Name = "btn_01";
+            this.btn_01.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_01.Size = new System.Drawing.Size(267, 39);
+            this.btn_01.TabIndex = 0;
+            this.btn_01.Text = "Button_01";
+            this.btn_01.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_01.UseVisualStyleBackColor = true;
             // 
             // Frm_Menu_Form
             // 
@@ -584,6 +576,7 @@
             this.pnl_Head.PerformLayout();
             this.pnl_ChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnl_Reports_Submenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -602,8 +595,6 @@
         private System.Windows.Forms.Button btn_Purchase;
         private System.Windows.Forms.Button btn_Sale;
         private System.Windows.Forms.Panel pnl_Sale_Submenu;
-        private System.Windows.Forms.Button btn_Quotation_List;
-        private System.Windows.Forms.Button btn_Quotation;
         private System.Windows.Forms.Button btn_Invoice_List;
         private System.Windows.Forms.Button btn_Invoice;
         private System.Windows.Forms.Button btn_Stock;
@@ -613,13 +604,15 @@
         private System.Windows.Forms.Panel pnl_Head;
         private System.Windows.Forms.Label lbl_Head;
         private System.Windows.Forms.Button btn_Supplier_Information;
-        private System.Windows.Forms.Button btn_Update_Employee_Information;
         private System.Windows.Forms.Button btn_Employee_Information;
         private System.Windows.Forms.Button btn_Product_List;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Add_New_Category;
-        private System.Windows.Forms.Button btn_Update_Product;
         public System.Windows.Forms.Panel pnl_ChildForm;
-        private System.Windows.Forms.Button btn_Add_New_Subcategory;
+        private System.Windows.Forms.Button btn_Reports;
+        private System.Windows.Forms.Panel pnl_Reports_Submenu;
+        private System.Windows.Forms.Button btn_03;
+        private System.Windows.Forms.Button btn_02;
+        private System.Windows.Forms.Button btn_01;
     }
 }

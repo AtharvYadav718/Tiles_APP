@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CR_Customer_Invoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Customer_Invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Frm_Add_New_Category.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,12 +136,6 @@
     <Compile Include="Frm_Purchase_Bill_List.Designer.cs">
       <DependentUpon>Frm_Purchase_Bill_List.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Quotation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Quotation.Designer.cs">
-      <DependentUpon>Frm_Quotation.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_Remaining_Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,20 +168,60 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Frm_Quotation_List.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Quotation_List.Designer.cs">
-      <DependentUpon>Frm_Quotation_List.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_Purchase_Bill.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Purchase_Bill.Designer.cs">
       <DependentUpon>Frm_Purchase_Bill.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\CrystalReports\CR_Customer_Entry.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Customer_Entry.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReports\CR_Customer_Invoice_D.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Customer_Invoice_D.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReports\CR_Purchase_Challan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Purchase_Challan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Customer_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Customer_Entry.Designer.cs">
+      <DependentUpon>Frm_Customer_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Customer_Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Customer_Invoice.Designer.cs">
+      <DependentUpon>Frm_Customer_Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Invoice_Bill_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Invoice_Bill_D.Designer.cs">
+      <DependentUpon>Frm_Invoice_Bill_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Purchase_Challan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Purchase_Challan.Designer.cs">
+      <DependentUpon>Frm_Purchase_Challan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shared_Class.cs" />
     <Compile Include="Tiles_App_Sherard_Content.cs" />
+    <EmbeddedResource Include="CR_Customer_Invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Customer_Invoice.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Add_New_Category.resx">
       <DependentUpon>Frm_Add_New_Category.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,9 +261,6 @@
     <EmbeddedResource Include="Frm_Purchase_Bill_List.resx">
       <DependentUpon>Frm_Purchase_Bill_List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Quotation.resx">
-      <DependentUpon>Frm_Quotation.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Remaining_Stock.resx">
       <DependentUpon>Frm_Remaining_Stock.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,11 +285,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Frm_Quotation_List.resx">
-      <DependentUpon>Frm_Quotation_List.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Purchase_Bill.resx">
       <DependentUpon>Frm_Purchase_Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReports\CR_Customer_Entry.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Customer_Entry.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReports\CR_Customer_Invoice_D.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Customer_Invoice_D.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReports\CR_Purchase_Challan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Purchase_Challan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report Forms\Frm_Customer_Entry.resx">
+      <DependentUpon>Frm_Customer_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report Forms\Frm_Customer_Invoice.resx">
+      <DependentUpon>Frm_Customer_Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report Forms\Frm_Invoice_Bill_D.resx">
+      <DependentUpon>Frm_Invoice_Bill_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report Forms\Frm_Purchase_Challan.resx">
+      <DependentUpon>Frm_Purchase_Challan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -260,6 +324,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

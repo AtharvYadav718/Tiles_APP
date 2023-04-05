@@ -59,6 +59,7 @@
             this.dtp_Joining_Date = new System.Windows.Forms.DateTimePicker();
             this.lbl_Joining_Date = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
+            this.btn_Update_Employee_Information = new System.Windows.Forms.Button();
             this.gb_Employee_Information.SuspendLayout();
             this.gb_Personal_Information.SuspendLayout();
             this.SuspendLayout();
@@ -411,7 +412,7 @@
             // 
             this.btn_Save.BackColor = System.Drawing.Color.LightSalmon;
             this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(589, 631);
+            this.btn_Save.Location = new System.Drawing.Point(488, 630);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(157, 71);
@@ -420,6 +421,19 @@
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
+            // btn_Update_Employee_Information
+            // 
+            this.btn_Update_Employee_Information.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_Update_Employee_Information.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update_Employee_Information.Location = new System.Drawing.Point(710, 630);
+            this.btn_Update_Employee_Information.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Update_Employee_Information.Name = "btn_Update_Employee_Information";
+            this.btn_Update_Employee_Information.Size = new System.Drawing.Size(393, 71);
+            this.btn_Update_Employee_Information.TabIndex = 16;
+            this.btn_Update_Employee_Information.Text = "Update Employee Information";
+            this.btn_Update_Employee_Information.UseVisualStyleBackColor = false;
+            this.btn_Update_Employee_Information.Click += new System.EventHandler(this.btn_Update_Employee_Information_Click);
+            // 
             // Frm_Add_New_Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -427,6 +441,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1285, 703);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Update_Employee_Information);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.gb_Personal_Information);
             this.Controls.Add(this.gb_Employee_Information);
@@ -476,5 +491,6 @@
         private System.Windows.Forms.Label lbl_Joining_Date;
         private System.Windows.Forms.ComboBox Cmb_Gender;
         private System.Windows.Forms.ComboBox Cmb_Post;
+        private System.Windows.Forms.Button btn_Update_Employee_Information;
     }
 }

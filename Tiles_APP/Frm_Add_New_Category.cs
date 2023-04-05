@@ -51,7 +51,11 @@ namespace Tiles_APP
 
             Tiles_App_Sherard_Content.Con_Close();
         }
-          
+        private void btn_Add_New_Subcategory_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void tb_Category_ID_KeyPress(object sender, KeyPressEventArgs e)
         {
             Tiles_App_Sherard_Content obj = new Tiles_App_Sherard_Content();
@@ -69,5 +73,7 @@ namespace Tiles_APP
             tb_Category_ID.Text = Convert.ToString(Tiles_App_Sherard_Content.Auto_Incr("Category_Details", "Category_ID", 1));
             tb_Category_Name.Clear();
         }
+
+     
     }
 }

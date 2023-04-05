@@ -73,6 +73,10 @@ namespace Tiles_APP
             obj.Only_Text(sender, e);
         }
 
+        private void btn_Update_Employee_Information_Click(object sender, EventArgs e)
+        {
+
+        }
         void Clear_Controls()
         {
             tb_Employee_ID.Text = Convert.ToString(Tiles_App_Sherard_Content.Auto_Incr("Employee_Details", "Employee_ID", 401));
@@ -89,6 +93,7 @@ namespace Tiles_APP
             tb_Qualification.Clear();
             tb_PAN_Number.Clear();
             tb_Salary.Clear();
-        }        
+        }
+
     }
 }

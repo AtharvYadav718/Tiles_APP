@@ -24,11 +24,12 @@ namespace Tiles_APP
             pnl_Purchase_Submenu.Visible = false;
             pnl_Sale_Submenu.Visible = false;
             pnl_Stock_Submenu.Visible = false;
+            pnl_Reports_Submenu.Visible = false;
         }
 
         private void hideSubmenu()
         {
-            if(pnl_Master_Submenu.Visible==true)
+            if(pnl_Master_Submenu.Visible == true)
                 pnl_Master_Submenu.Visible=false;
             if (pnl_Purchase_Submenu.Visible == true)
                 pnl_Purchase_Submenu.Visible = false;
@@ -36,6 +37,8 @@ namespace Tiles_APP
                 pnl_Sale_Submenu.Visible=false;
             if (pnl_Stock_Submenu.Visible == true)
                 pnl_Stock_Submenu.Visible = false;
+            if (pnl_Reports_Submenu.Visible == true)
+                pnl_Reports_Submenu.Visible = false;
         }
 
         private void showSubmenu(Panel Submenu)
@@ -57,49 +60,36 @@ namespace Tiles_APP
         private void btn_Customer_Information_Click(object sender, EventArgs e)
         {
             openChildForm(new Frm_Customer_Information());
-            hideSubmenu();
+           // hideSubmenu();
             lbl_Head.Text = "Customer Information";
         }
 
         private void btn_Supplier_Information_Click(object sender, EventArgs e)
         {
             openChildForm(new Frm_Add_New_Supplier());
-            hideSubmenu();
+          //  hideSubmenu();
             lbl_Head.Text = "Supplier Information";
         }
 
         private void btn_Product_Information_Click(object sender, EventArgs e)
         {
             openChildForm(new Frm_Add_New_Product());
-            hideSubmenu();
+          //  hideSubmenu();
             lbl_Head.Text = "Product Information";
         }
        
         private void btn_Employee_Information_Click(object sender, EventArgs e)
         {
             openChildForm(new Frm_Add_New_Employee());
-            hideSubmenu();
+           // hideSubmenu();
             lbl_Head.Text = "Employee Information";
-        }
-
-        private void btn_Update_Employee_Information_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Frm_Update_Employee_Details());
-            hideSubmenu();
-            lbl_Head.Text = "Update Employee ";
         }
 
         private void btn_Add_New_Category_Click_1(object sender, EventArgs e)
         {
             openChildForm(new Frm_Add_New_Category());
-            hideSubmenu();
+          //  hideSubmenu();
             lbl_Head.Text = "Add New Category";
-        }
-        private void btn_Add_New_Subcategory_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Frm_Add_New_Subcategory());
-            hideSubmenu();
-            lbl_Head.Text = "Add New Subcategory";
         }
 
         private void btn_Purchase_Click(object sender, EventArgs e)
@@ -139,20 +129,6 @@ namespace Tiles_APP
             lbl_Head.Text = "Invoice List";
         }
 
-        private void btn_Quotation_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Frm_Quotation());
-            hideSubmenu();
-            lbl_Head.Text = "Quotation";
-        }
-
-        private void btn_Quotation_List_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Frm_Quotation_List());
-            hideSubmenu();
-            lbl_Head.Text = "Quotaion List";
-        }
-
         private void btn_Stock_Click(object sender, EventArgs e)
         {
             showSubmenu(pnl_Stock_Submenu);
@@ -171,6 +147,7 @@ namespace Tiles_APP
             hideSubmenu();
             lbl_Head.Text = "Dead Stock";
         }
+
         private void btn_Product_List_Click(object sender, EventArgs e)
         {
             openChildForm(new Frm_Product_List());
@@ -178,13 +155,11 @@ namespace Tiles_APP
             lbl_Head.Text = "Product List";
         }
 
-        private void btn_Update_Product_Click(object sender, EventArgs e)
+        private void btn_Reports_Click(object sender, EventArgs e)
         {
-            openChildForm(new Frm_Update_Product_Details());
-            hideSubmenu();
-            lbl_Head.Text = "Update Product Details";
-        }
 
+            showSubmenu(pnl_Reports_Submenu);
+        }
 
         private Form activeForm=null;
         private void openChildForm(Form childForm)
@@ -203,6 +178,6 @@ namespace Tiles_APP
             childForm.Show();
 
         }
-
+      
     }
 }

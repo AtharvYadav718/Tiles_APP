@@ -67,10 +67,10 @@
             // 
             this.tb_Purchase_Price.Enabled = false;
             this.tb_Purchase_Price.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Purchase_Price.Location = new System.Drawing.Point(491, 323);
+            this.tb_Purchase_Price.Location = new System.Drawing.Point(490, 326);
             this.tb_Purchase_Price.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Purchase_Price.Name = "tb_Purchase_Price";
-            this.tb_Purchase_Price.Size = new System.Drawing.Size(191, 39);
+            this.tb_Purchase_Price.Size = new System.Drawing.Size(358, 39);
             this.tb_Purchase_Price.TabIndex = 7;
             // 
             // lbl_Purchase_Price
@@ -87,10 +87,10 @@
             // 
             this.tb_Unit.Enabled = false;
             this.tb_Unit.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Unit.Location = new System.Drawing.Point(610, 244);
+            this.tb_Unit.Location = new System.Drawing.Point(703, 244);
             this.tb_Unit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Unit.Name = "tb_Unit";
-            this.tb_Unit.Size = new System.Drawing.Size(102, 39);
+            this.tb_Unit.Size = new System.Drawing.Size(140, 39);
             this.tb_Unit.TabIndex = 6;
             // 
             // cmb_Product_Name
@@ -111,7 +111,7 @@
             this.tb_Quantity.Location = new System.Drawing.Point(491, 244);
             this.tb_Quantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Quantity.Name = "tb_Quantity";
-            this.tb_Quantity.Size = new System.Drawing.Size(100, 39);
+            this.tb_Quantity.Size = new System.Drawing.Size(143, 39);
             this.tb_Quantity.TabIndex = 5;
             this.tb_Quantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             this.tb_Quantity.Leave += new System.EventHandler(this.tb_Quantity_Leave);
@@ -226,7 +226,7 @@
             this.tb_Total_Amount.Location = new System.Drawing.Point(491, 399);
             this.tb_Total_Amount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Total_Amount.Name = "tb_Total_Amount";
-            this.tb_Total_Amount.Size = new System.Drawing.Size(157, 39);
+            this.tb_Total_Amount.Size = new System.Drawing.Size(357, 39);
             this.tb_Total_Amount.TabIndex = 10;
             // 
             // lbl_Total_Amount
@@ -241,7 +241,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.panel1.BackColor = System.Drawing.Color.Moccasin;
             this.panel1.Controls.Add(this.Cmb_Category_Name);
             this.panel1.Controls.Add(this.tb_Total_Amount);
             this.panel1.Controls.Add(this.tb_Purchase_Price);

@@ -144,6 +144,8 @@ namespace Tiles_APP
             Tiles_App_Sherard_Content.Con_Open();
             if (tb_Dead_No.Text != "" && Cmb_Category_Name.Text != "" && cmb_Subcategory_Name.Text != "" && cmb_Product_Name.Text != "" &&  dtp_Date.Text != "" && tb_Purchase_Price.Text != "" &&  tb_Quantity.Text != "" && tb_Unit.Text != "")
             {
+                int CStock = 0;
+
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = Tiles_App_Sherard_Content.Con;
                 cmd.CommandText = "Insert into Dead_Stock_Details(Dead_No,Dead_Date,Category_Name,Subcategory_Name,Product_Name,Quantity,Unit,Purchase_Price,Total_Amount) Values(@DN,@DD,@CN,@SN,@PN,@QUANTITY,@UNIT,@PP,@TA)";
@@ -159,6 +161,36 @@ namespace Tiles_APP
                 cmd.Parameters.Add("TA", SqlDbType.Money).Value = tb_Total_Amount.Text;
 
                 cmd.ExecuteNonQuery();
+
+                cmd.CommandText = "Select Stock_Quantity from Product_Details where Category_Name = @Cat1 And Subcategory_Name = @SubCat1 And Product_Name = @Product_Name1";
+                cmd.Connection = Tiles_App_Sherard_Content.Con;
+
+                cmd.Parameters.Add("@Cat1", SqlDbType.VarChar).Value = Cmb_Category_Name.Text;
+                cmd.Parameters.Add("@SubCat1", SqlDbType.NVarChar).Value = cmb_Subcategory_Name.Text;
+                cmd.Parameters.Add("@Product_Name1", SqlDbType.VarChar).Value = cmb_Product_Name.Text;
+
+                SqlDataReader Dr = cmd.ExecuteReader();
+
+                if (Dr.Read())
+                {
+                    CStock = Convert.ToInt32((Dr["Stock_Quantity"].ToString())) - Convert.ToInt32(tb_Quantity.Text);
+                }
+
+                cmd.Dispose();
+                Dr.Close();
+
+                cmd.CommandText = "Update Product_Details Set Stock_Quantity = @Qty WHERE Category_Name = @Cat2 And Subcategory_Name = @SubCat2 And Product_Name = @Product_Name2 ";
+                cmd.Connection = Tiles_App_Sherard_Content.Con;
+
+                cmd.Parameters.Add("@Cat2", SqlDbType.VarChar).Value = Cmb_Category_Name.Text;
+                cmd.Parameters.Add("@SubCat2", SqlDbType.NVarChar).Value = cmb_Subcategory_Name.Text;
+                cmd.Parameters.Add("@Product_Name2", SqlDbType.VarChar).Value = cmb_Product_Name.Text;
+                cmd.Parameters.Add("@Qty", SqlDbType.Int).Value = CStock;
+
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+
+
 
                 MessageBox.Show("Record Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear_Control();            }

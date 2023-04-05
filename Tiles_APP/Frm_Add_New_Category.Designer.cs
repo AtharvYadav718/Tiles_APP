@@ -33,6 +33,7 @@
             this.tb_Category_Name = new System.Windows.Forms.TextBox();
             this.lbl_Category_Name = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
+            this.btn_Add_New_Subcategory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tb_Category_ID
@@ -80,7 +81,7 @@
             // 
             this.btn_Save.BackColor = System.Drawing.Color.LightSalmon;
             this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(479, 438);
+            this.btn_Save.Location = new System.Drawing.Point(386, 438);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(175, 68);
@@ -89,6 +90,19 @@
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
+            // btn_Add_New_Subcategory
+            // 
+            this.btn_Add_New_Subcategory.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_Add_New_Subcategory.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add_New_Subcategory.Location = new System.Drawing.Point(619, 438);
+            this.btn_Add_New_Subcategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Add_New_Subcategory.Name = "btn_Add_New_Subcategory";
+            this.btn_Add_New_Subcategory.Size = new System.Drawing.Size(397, 68);
+            this.btn_Add_New_Subcategory.TabIndex = 24;
+            this.btn_Add_New_Subcategory.Text = "Add New Subcategory";
+            this.btn_Add_New_Subcategory.UseVisualStyleBackColor = false;
+            this.btn_Add_New_Subcategory.Click += new System.EventHandler(this.btn_Add_New_Subcategory_Click);
+            // 
             // Frm_Add_New_Category
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -96,6 +110,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1285, 703);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Add_New_Subcategory);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.tb_Category_ID);
             this.Controls.Add(this.lbl_Category_ID);
@@ -118,5 +133,6 @@
         private System.Windows.Forms.TextBox tb_Category_Name;
         private System.Windows.Forms.Label lbl_Category_Name;
         private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.Button btn_Add_New_Subcategory;
     }
 }
