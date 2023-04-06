@@ -161,6 +161,27 @@ namespace Tiles_APP
             showSubmenu(pnl_Reports_Submenu);
         }
 
+        private void btn_Customer_Entry_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Reports.Report_Forms.Frm_Customer_Entry());
+            hideSubmenu();
+            lbl_Head.Text = "Customer Entry";
+        }
+
+        private void btn_Supplier_Entry_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Reports.Report_Forms.Frm_Suppiler_Entry());
+            hideSubmenu();
+            lbl_Head.Text = "Supplier Entry";
+        }
+
+        private void btn_Datewise_Report_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Reports.Report_Forms.Frm_Invoice_Bill_D());
+            hideSubmenu();
+            lbl_Head.Text = "Shop Total Collection";
+        }
+
         private Form activeForm=null;
         private void openChildForm(Form childForm)
         {
@@ -178,6 +199,6 @@ namespace Tiles_APP
             childForm.Show();
 
         }
-      
+
     }
 }

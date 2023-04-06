@@ -192,6 +192,12 @@
       <DependentUpon>CR_Purchase_Challan.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reports\CrystalReports\CR_Supplier_Entry.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Supplier_Entry.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reports\Report Forms\Frm_Customer_Entry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,12 @@
     </Compile>
     <Compile Include="Reports\Report Forms\Frm_Purchase_Challan.Designer.cs">
       <DependentUpon>Frm_Purchase_Challan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Suppiler_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Suppiler_Entry.Designer.cs">
+      <DependentUpon>Frm_Suppiler_Entry.cs</DependentUpon>
     </Compile>
     <Compile Include="Shared_Class.cs" />
     <Compile Include="Tiles_App_Sherard_Content.cs" />
@@ -300,6 +312,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_Purchase_Challan.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReports\CR_Supplier_Entry.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Supplier_Entry.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Report Forms\Frm_Customer_Entry.resx">
       <DependentUpon>Frm_Customer_Entry.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Report Forms\Frm_Purchase_Challan.resx">
       <DependentUpon>Frm_Purchase_Challan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report Forms\Frm_Suppiler_Entry.resx">
+      <DependentUpon>Frm_Suppiler_Entry.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

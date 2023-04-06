@@ -115,7 +115,13 @@ namespace Tiles_APP
  
         private void btn_Update_Product_Details_Click(object sender, EventArgs e)
         {
+            Frm_Update_Product_Details Obj = new Frm_Update_Product_Details() { TopLevel = false, TopMost = true };
+            Obj.FormBorderStyle = FormBorderStyle.None;
 
+            Frm_Menu_Form.pnl_ChildForm.Controls.Clear();
+            Frm_Menu_Form.pnl_ChildForm.Controls.Add(Obj);
+
+            Obj.Show();
         }
         private void Only_Numeric(object sender, KeyPressEventArgs e)
         {

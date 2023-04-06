@@ -53,7 +53,13 @@ namespace Tiles_APP
         }
         private void btn_Add_New_Subcategory_Click(object sender, EventArgs e)
         {
+            Frm_Add_New_Subcategory Obj = new Frm_Add_New_Subcategory() { TopLevel = false, TopMost = true };
+            Obj.FormBorderStyle = FormBorderStyle.None;
 
+            Frm_Menu_Form.pnl_ChildForm.Controls.Clear();
+            Frm_Menu_Form.pnl_ChildForm.Controls.Add(Obj);
+
+            Obj.Show();
         }
 
         private void tb_Category_ID_KeyPress(object sender, KeyPressEventArgs e)

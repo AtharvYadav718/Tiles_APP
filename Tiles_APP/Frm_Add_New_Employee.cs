@@ -75,7 +75,13 @@ namespace Tiles_APP
 
         private void btn_Update_Employee_Information_Click(object sender, EventArgs e)
         {
+            Frm_Update_Employee_Details Obj = new Frm_Update_Employee_Details() { TopLevel = false, TopMost = true };
+            Obj.FormBorderStyle = FormBorderStyle.None;
 
+            Frm_Menu_Form.pnl_ChildForm.Controls.Clear();
+            Frm_Menu_Form.pnl_ChildForm.Controls.Add(Obj);
+
+            Obj.Show();
         }
         void Clear_Controls()
         {

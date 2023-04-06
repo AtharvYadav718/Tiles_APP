@@ -169,10 +169,11 @@
             this.Controls.Add(this.lbl_Username);
             this.Controls.Add(this.lbl_User_Role);
             this.Controls.Add(this.pnl_Head);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_Tiles_APP_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "APP Login";
+            this.Text = "APP LOGIN";
             this.Load += new System.EventHandler(this.Frm_Tiles_APP_Login_Load);
             this.pnl_Head.ResumeLayout(false);
             this.pnl_Head.PerformLayout();

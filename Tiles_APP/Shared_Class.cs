@@ -11,5 +11,6 @@ namespace Tiles_APP
         public static string Username = "User";
         public static int Purchase_ID = 0;
         public static int Invoice_No = 0;
+       
     }
 }

@@ -31,7 +31,7 @@ namespace Tiles_APP.Reports.Report_Forms
             
             con.Open();
             DataTable dt = new DataTable();
-            cmd = new SqlCommand("select  Customer_ID,Date,Invoice_ID,Customer_Name,Paid_Bill,Balance_Amount,Total_Bill from Invoice_Bill_Details where  Customer_Name ='" + tb_Custmer_Name.Text  + "'", con);
+            cmd = new SqlCommand("select  Customer_ID,Date,Invoice_ID,Customer_Name,Discount,GST,Paid_Bill,Balance_Amount,Total_Bill from Invoice_Bill_Details where  Customer_Name ='" + tb_Custmer_Name.Text  + "'", con);
             dr = new SqlDataAdapter(cmd);
             dr.Fill(dt);
 
