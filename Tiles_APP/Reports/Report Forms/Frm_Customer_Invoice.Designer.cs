@@ -40,7 +40,7 @@
             this.crv_Customer_Invoice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_Customer_Invoice.Location = new System.Drawing.Point(0, 0);
             this.crv_Customer_Invoice.Name = "crv_Customer_Invoice";
-            this.crv_Customer_Invoice.Size = new System.Drawing.Size(1182, 1055);
+            this.crv_Customer_Invoice.Size = new System.Drawing.Size(1285, 703);
             this.crv_Customer_Invoice.TabIndex = 0;
             this.crv_Customer_Invoice.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -48,7 +48,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 1055);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1285, 703);
             this.Controls.Add(this.crv_Customer_Invoice);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

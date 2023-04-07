@@ -85,13 +85,13 @@ namespace Tiles_APP
             lbl_Head.Text = "Employee Information";
         }
 
-        private void btn_Add_New_Category_Click_1(object sender, EventArgs e)
+        private void btn_Category_Details_Click(object sender, EventArgs e)
         {
             openChildForm(new Frm_Add_New_Category());
-          //  hideSubmenu();
-            lbl_Head.Text = "Add New Category";
+            //  hideSubmenu();
+            lbl_Head.Text = "Category Details";
         }
-
+       
         private void btn_Purchase_Click(object sender, EventArgs e)
         {
             showSubmenu(pnl_Purchase_Submenu);
@@ -198,7 +198,6 @@ namespace Tiles_APP
             childForm.BringToFront();
             childForm.Show();
 
-        }
-
+        }      
     }
 }

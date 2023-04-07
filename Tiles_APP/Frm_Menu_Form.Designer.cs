@@ -49,7 +49,7 @@
             this.btn_Purchase_Bill = new System.Windows.Forms.Button();
             this.btn_Purchase = new System.Windows.Forms.Button();
             this.pnl_Master_Submenu = new System.Windows.Forms.Panel();
-            this.btn_Add_New_Category = new System.Windows.Forms.Button();
+            this.btn_Category_Details = new System.Windows.Forms.Button();
             this.btn_Employee_Information = new System.Windows.Forms.Button();
             this.btn_Supplier_Information = new System.Windows.Forms.Button();
             this.btn_Product_Information = new System.Windows.Forms.Button();
@@ -59,7 +59,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnl_Head = new System.Windows.Forms.Panel();
             this.lbl_Head = new System.Windows.Forms.Label();
-                 pnl_ChildForm = new System.Windows.Forms.Panel();
+            pnl_ChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_Sidemenu.SuspendLayout();
             this.pnl_Reports_Submenu.SuspendLayout();
@@ -92,7 +92,7 @@
             this.pnl_Sidemenu.Location = new System.Drawing.Point(0, 0);
             this.pnl_Sidemenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_Sidemenu.Name = "pnl_Sidemenu";
-            this.pnl_Sidemenu.Size = new System.Drawing.Size(267, 975);
+            this.pnl_Sidemenu.Size = new System.Drawing.Size(267, 875);
             this.pnl_Sidemenu.TabIndex = 0;
             // 
             // pnl_Reports_Submenu
@@ -390,7 +390,7 @@
             // pnl_Master_Submenu
             // 
             this.pnl_Master_Submenu.BackColor = System.Drawing.Color.LightYellow;
-            this.pnl_Master_Submenu.Controls.Add(this.btn_Add_New_Category);
+            this.pnl_Master_Submenu.Controls.Add(this.btn_Category_Details);
             this.pnl_Master_Submenu.Controls.Add(this.btn_Employee_Information);
             this.pnl_Master_Submenu.Controls.Add(this.btn_Supplier_Information);
             this.pnl_Master_Submenu.Controls.Add(this.btn_Product_Information);
@@ -402,22 +402,22 @@
             this.pnl_Master_Submenu.Size = new System.Drawing.Size(267, 209);
             this.pnl_Master_Submenu.TabIndex = 2;
             // 
-            // btn_Add_New_Category
+            // btn_Category_Details
             // 
-            this.btn_Add_New_Category.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Add_New_Category.FlatAppearance.BorderSize = 0;
-            this.btn_Add_New_Category.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Add_New_Category.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add_New_Category.Location = new System.Drawing.Point(0, 156);
-            this.btn_Add_New_Category.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Add_New_Category.Name = "btn_Add_New_Category";
-            this.btn_Add_New_Category.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Add_New_Category.Size = new System.Drawing.Size(267, 39);
-            this.btn_Add_New_Category.TabIndex = 9;
-            this.btn_Add_New_Category.Text = "Add New Category";
-            this.btn_Add_New_Category.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Add_New_Category.UseVisualStyleBackColor = true;
-            this.btn_Add_New_Category.Click += new System.EventHandler(this.btn_Add_New_Category_Click_1);
+            this.btn_Category_Details.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Category_Details.FlatAppearance.BorderSize = 0;
+            this.btn_Category_Details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Category_Details.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Category_Details.Location = new System.Drawing.Point(0, 156);
+            this.btn_Category_Details.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Category_Details.Name = "btn_Category_Details";
+            this.btn_Category_Details.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_Category_Details.Size = new System.Drawing.Size(267, 39);
+            this.btn_Category_Details.TabIndex = 9;
+            this.btn_Category_Details.Text = "Category Details";
+            this.btn_Category_Details.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Category_Details.UseVisualStyleBackColor = true;
+            this.btn_Category_Details.Click += new System.EventHandler(this.btn_Category_Details_Click);
             // 
             // btn_Employee_Information
             // 
@@ -558,7 +558,7 @@
             pnl_ChildForm.Location = new System.Drawing.Point(267, 116);
             pnl_ChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pnl_ChildForm.Name = "pnl_ChildForm";
-            pnl_ChildForm.Size = new System.Drawing.Size(1312, 859);
+            pnl_ChildForm.Size = new System.Drawing.Size(1312, 759);
             pnl_ChildForm.TabIndex = 2;
             // 
             // pictureBox1
@@ -576,7 +576,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(1579, 975);
+            this.ClientSize = new System.Drawing.Size(1579, 875);
             this.Controls.Add(pnl_ChildForm);
             this.Controls.Add(this.pnl_Head);
             this.Controls.Add(this.pnl_Sidemenu);
@@ -627,13 +627,13 @@
         private System.Windows.Forms.Button btn_Employee_Information;
         private System.Windows.Forms.Button btn_Product_List;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_Add_New_Category;
-        public static System.Windows.Forms.Panel pnl_ChildForm;
         private System.Windows.Forms.Button btn_Reports;
         private System.Windows.Forms.Panel pnl_Reports_Submenu;
         private System.Windows.Forms.Button btn_Datewise_Report;
         private System.Windows.Forms.Button btn_Supplier_Entry;
         private System.Windows.Forms.Button btn_Customer_Entry;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btn_Category_Details;
+        public static System.Windows.Forms.Panel pnl_ChildForm;
     }
 }

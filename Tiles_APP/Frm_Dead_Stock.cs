@@ -194,12 +194,12 @@ namespace Tiles_APP
 
                 MessageBox.Show("Record Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear_Control();            }
-            else
-            {
+               else
+               {
                 MessageBox.Show("1st Fill All The Fields!!!", "Incomplete Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-            }
-            Tiles_App_Sherard_Content.Con_Close();
+               }
+                Tiles_App_Sherard_Content.Con_Close();
 
         }
 

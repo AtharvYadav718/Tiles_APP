@@ -41,16 +41,17 @@ namespace Tiles_APP.Reports.Report_Forms
             this.crv_Customer_Entry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crv_Customer_Entry.Cursor = System.Windows.Forms.Cursors.Default;
             this.crv_Customer_Entry.DisplayStatusBar = false;
-            this.crv_Customer_Entry.Location = new System.Drawing.Point(0, 100);
+            this.crv_Customer_Entry.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.crv_Customer_Entry.Location = new System.Drawing.Point(0, 65);
             this.crv_Customer_Entry.Name = "crv_Customer_Entry";
-            this.crv_Customer_Entry.Size = new System.Drawing.Size(1182, 661);
+            this.crv_Customer_Entry.Size = new System.Drawing.Size(1285, 638);
             this.crv_Customer_Entry.TabIndex = 0;
             this.crv_Customer_Entry.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // tb_Custmer_Name
             // 
             this.tb_Custmer_Name.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Custmer_Name.Location = new System.Drawing.Point(557, 22);
+            this.tb_Custmer_Name.Location = new System.Drawing.Point(474, 16);
             this.tb_Custmer_Name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Custmer_Name.Name = "tb_Custmer_Name";
             this.tb_Custmer_Name.Size = new System.Drawing.Size(359, 39);
@@ -60,7 +61,7 @@ namespace Tiles_APP.Reports.Report_Forms
             // 
             this.lbl_Customer_Name.AutoSize = true;
             this.lbl_Customer_Name.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Customer_Name.Location = new System.Drawing.Point(276, 22);
+            this.lbl_Customer_Name.Location = new System.Drawing.Point(191, 16);
             this.lbl_Customer_Name.Name = "lbl_Customer_Name";
             this.lbl_Customer_Name.Size = new System.Drawing.Size(242, 36);
             this.lbl_Customer_Name.TabIndex = 27;
@@ -70,7 +71,7 @@ namespace Tiles_APP.Reports.Report_Forms
             // 
             this.btn_Search.BackColor = System.Drawing.Color.LightSalmon;
             this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search.Location = new System.Drawing.Point(992, 22);
+            this.btn_Search.Location = new System.Drawing.Point(872, 6);
             this.btn_Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(157, 54);
@@ -83,7 +84,8 @@ namespace Tiles_APP.Reports.Report_Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 761);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1285, 703);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.tb_Custmer_Name);
             this.Controls.Add(this.lbl_Customer_Name);

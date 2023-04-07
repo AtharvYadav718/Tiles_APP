@@ -39,7 +39,7 @@ namespace Tiles_APP.Reports.Report_Forms
             // dtp_Start_Date
             // 
             this.dtp_Start_Date.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_Start_Date.Location = new System.Drawing.Point(165, 22);
+            this.dtp_Start_Date.Location = new System.Drawing.Point(232, 17);
             this.dtp_Start_Date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_Start_Date.Name = "dtp_Start_Date";
             this.dtp_Start_Date.Size = new System.Drawing.Size(283, 39);
@@ -49,7 +49,7 @@ namespace Tiles_APP.Reports.Report_Forms
             // 
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Date.Location = new System.Drawing.Point(55, 28);
+            this.lbl_Date.Location = new System.Drawing.Point(129, 17);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(86, 36);
             this.lbl_Date.TabIndex = 29;
@@ -58,7 +58,7 @@ namespace Tiles_APP.Reports.Report_Forms
             // dtp_End_Date
             // 
             this.dtp_End_Date.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_End_Date.Location = new System.Drawing.Point(482, 22);
+            this.dtp_End_Date.Location = new System.Drawing.Point(556, 17);
             this.dtp_End_Date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_End_Date.Name = "dtp_End_Date";
             this.dtp_End_Date.Size = new System.Drawing.Size(283, 39);
@@ -68,7 +68,7 @@ namespace Tiles_APP.Reports.Report_Forms
             // 
             this.btn_Search.BackColor = System.Drawing.Color.LightSalmon;
             this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search.Location = new System.Drawing.Point(814, 16);
+            this.btn_Search.Location = new System.Drawing.Point(886, 10);
             this.btn_Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(157, 49);
@@ -84,9 +84,9 @@ namespace Tiles_APP.Reports.Report_Forms
             this.crv_Invoice_Bill_D.Cursor = System.Windows.Forms.Cursors.Default;
             this.crv_Invoice_Bill_D.DisplayStatusBar = false;
             this.crv_Invoice_Bill_D.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.crv_Invoice_Bill_D.Location = new System.Drawing.Point(0, 72);
+            this.crv_Invoice_Bill_D.Location = new System.Drawing.Point(0, 64);
             this.crv_Invoice_Bill_D.Name = "crv_Invoice_Bill_D";
-            this.crv_Invoice_Bill_D.Size = new System.Drawing.Size(1095, 691);
+            this.crv_Invoice_Bill_D.Size = new System.Drawing.Size(1285, 639);
             this.crv_Invoice_Bill_D.TabIndex = 97;
             this.crv_Invoice_Bill_D.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -94,7 +94,8 @@ namespace Tiles_APP.Reports.Report_Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 763);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1285, 703);
             this.Controls.Add(this.crv_Invoice_Bill_D);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.dtp_End_Date);

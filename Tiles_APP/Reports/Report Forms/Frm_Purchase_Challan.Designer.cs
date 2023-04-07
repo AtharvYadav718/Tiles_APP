@@ -41,7 +41,7 @@ namespace Tiles_APP.Reports.Report_Forms
             this.crv_Purchase_Challan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_Purchase_Challan.Location = new System.Drawing.Point(0, 0);
             this.crv_Purchase_Challan.Name = "crv_Purchase_Challan";
-            this.crv_Purchase_Challan.Size = new System.Drawing.Size(1052, 758);
+            this.crv_Purchase_Challan.Size = new System.Drawing.Size(1285, 703);
             this.crv_Purchase_Challan.TabIndex = 0;
             this.crv_Purchase_Challan.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -49,7 +49,8 @@ namespace Tiles_APP.Reports.Report_Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 758);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1285, 703);
             this.Controls.Add(this.crv_Purchase_Challan);
             this.Name = "Frm_Purchase_Challan";
             this.Text = "Purchase Challan";
