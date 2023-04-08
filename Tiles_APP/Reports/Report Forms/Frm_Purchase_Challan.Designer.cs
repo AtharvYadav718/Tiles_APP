@@ -54,6 +54,7 @@ namespace Tiles_APP.Reports.Report_Forms
             this.Controls.Add(this.crv_Purchase_Challan);
             this.Name = "Frm_Purchase_Challan";
             this.Text = "Purchase Challan";
+            this.Load += new System.EventHandler(this.Frm_Purchase_Challan_Load);
             this.ResumeLayout(false);
 
         }

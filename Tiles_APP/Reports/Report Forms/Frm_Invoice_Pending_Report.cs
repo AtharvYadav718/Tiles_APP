@@ -12,38 +12,37 @@ using System.Windows.Forms;
 
 namespace Tiles_APP.Reports.Report_Forms
 {
-    public partial class Frm_Purchase_Challan : Form
+    public partial class Frm_Invoice_Pending_Report : Form
     {
-        public Frm_Purchase_Challan()
+        public Frm_Invoice_Pending_Report()
         {
             InitializeComponent();
         }
 
+        private void Frm_Invoice_Pending_Report_Load(object sender, EventArgs e)
+        {
 
-        public void showREport(int PurchaseID)
+        }
+
+        public void showREport(int InvoideId)
         {
             ReportDocument reportDocument = new ReportDocument();
             ParameterField parameterField = new ParameterField();
             ParameterFields parameterFields = new ParameterFields();
             ParameterDiscreteValue parameterDiscreteValue = new ParameterDiscreteValue();
 
-            parameterField.Name = "PurchaseID";
-            parameterDiscreteValue.Value = PurchaseID;
+            parameterField.Name = "InvoiceId";
+            parameterDiscreteValue.Value = InvoideId;
             parameterField.CurrentValues.Add(parameterDiscreteValue);
             parameterFields.Add(parameterField);
 
-            crv_Purchase_Challan.ParameterFieldInfo = parameterFields;
-            reportDocument.Load(@"D:\SGM_VS_19\Tiles_APP\Tiles_APP\Reports\CrystalReports\CR_Purchase_Challan.rpt");
-            crv_Purchase_Challan.ReportSource = reportDocument;
+            crv_Invoice_Pending.ParameterFieldInfo = parameterFields;
+            reportDocument.Load(@"D:\SGM_VS_19\Tiles_APP\Tiles_APP\Reports\CrystalReports\CR_Invoice_Pending.rpt");
+            crv_Invoice_Pending.ReportSource = reportDocument;
             reportDocument.SetDatabaseLogon("Shop", "Shop", "Atharv", "Tiles_App_DB");
 
             //BillDetailsInvoiceID
-            //D:\SGM_VS_19\Tiles_APP\Tiles_APP\Reports\CrystalReports\CR_Purchase_Challan.rpt
-        }
-
-        private void Frm_Purchase_Challan_Load(object sender, EventArgs e)
-        {
-
+             //D:\SGM_VS_19\Tiles_APP\Tiles_APP\Reports\CrystalReports\CR_Invoice_Pending.rpt
         }
     }
 }

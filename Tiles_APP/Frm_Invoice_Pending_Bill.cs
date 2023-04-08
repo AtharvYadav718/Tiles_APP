@@ -52,6 +52,7 @@ namespace Tiles_APP
             double Paid = Convert.ToDouble(tb_Paid_Amount.Text) + Convert.ToDouble(tb_Paying_Amount.Text);
             double Balance = Convert.ToDouble(tb_Balance_Amount.Text) - Convert.ToDouble(tb_Paying_Amount.Text);
 
+            int invoiceId = Convert.ToInt32(tb_Invoice_No.Text);
             Tiles_App_Sherard_Content.Con_Open();
             /// Update Purchase_Bill_Details
 
@@ -80,7 +81,13 @@ namespace Tiles_APP
                 cmd1.Dispose();
 
                 MessageBox.Show(" Payment Paid Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (invoiceId > 0)
+                {
+                    Reports.Report_Forms.Frm_Invoice_Pending_Report frm = new Reports.Report_Forms.Frm_Invoice_Pending_Report();
+                    frm.showREport(invoiceId);
+                    frm.Show();
 
+                }
                 this.Close();
             }
             else

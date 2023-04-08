@@ -186,10 +186,22 @@
       <DependentUpon>CR_Customer_Invoice_D.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reports\CrystalReports\CR_Invoice_Pending.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Invoice_Pending.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reports\CrystalReports\CR_Purchase_Challan.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CR_Purchase_Challan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReports\CR_Purchase_Pending.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Purchase_Pending.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\CrystalReports\CR_Supplier_Entry.cs">
@@ -216,11 +228,23 @@
     <Compile Include="Reports\Report Forms\Frm_Invoice_Bill_D.Designer.cs">
       <DependentUpon>Frm_Invoice_Bill_D.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Invoice_Pending_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Invoice_Pending_Report.Designer.cs">
+      <DependentUpon>Frm_Invoice_Pending_Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Report Forms\Frm_Purchase_Challan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\Report Forms\Frm_Purchase_Challan.Designer.cs">
       <DependentUpon>Frm_Purchase_Challan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Purchase_Pending_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Report Forms\Frm_Purchase_Pending_Report.Designer.cs">
+      <DependentUpon>Frm_Purchase_Pending_Report.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Report Forms\Frm_Suppiler_Entry.cs">
       <SubType>Form</SubType>
@@ -308,9 +332,17 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_Customer_Invoice_D.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReports\CR_Invoice_Pending.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Invoice_Pending.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\CrystalReports\CR_Purchase_Challan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_Purchase_Challan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReports\CR_Purchase_Pending.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Purchase_Pending.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\CrystalReports\CR_Supplier_Entry.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -325,8 +357,14 @@
     <EmbeddedResource Include="Reports\Report Forms\Frm_Invoice_Bill_D.resx">
       <DependentUpon>Frm_Invoice_Bill_D.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report Forms\Frm_Invoice_Pending_Report.resx">
+      <DependentUpon>Frm_Invoice_Pending_Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Report Forms\Frm_Purchase_Challan.resx">
       <DependentUpon>Frm_Purchase_Challan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report Forms\Frm_Purchase_Pending_Report.resx">
+      <DependentUpon>Frm_Purchase_Pending_Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Report Forms\Frm_Suppiler_Entry.resx">
       <DependentUpon>Frm_Suppiler_Entry.cs</DependentUpon>
