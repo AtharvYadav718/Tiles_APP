@@ -11,7 +11,9 @@ namespace Tiles_APP
 {
     class Tiles_App_Sherard_Content
     {
-        
+
+        public static int UserRole = 0;
+        public static String LoggedInUName = "Atharv";
         public static SqlConnection Con = new SqlConnection(@"Data Source=ATHARV;Initial Catalog=Tiles_APP_DB;Integrated Security=True");
 
         public static void Con_Open()

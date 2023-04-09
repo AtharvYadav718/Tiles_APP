@@ -271,7 +271,7 @@
             this.btn_Update_Product_Details.Location = new System.Drawing.Point(690, 588);
             this.btn_Update_Product_Details.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Update_Product_Details.Name = "btn_Update_Product_Details";
-            this.btn_Update_Product_Details.Size = new System.Drawing.Size(397, 71);
+            this.btn_Update_Product_Details.Size = new System.Drawing.Size(462, 71);
             this.btn_Update_Product_Details.TabIndex = 71;
             this.btn_Update_Product_Details.Text = "Update Product Details";
             this.btn_Update_Product_Details.UseVisualStyleBackColor = false;

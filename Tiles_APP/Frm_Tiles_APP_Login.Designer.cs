@@ -35,10 +35,10 @@
             this.lbl_Username = new System.Windows.Forms.Label();
             this.lbl_Password = new System.Windows.Forms.Label();
             this.Cmb_User_Role = new System.Windows.Forms.ComboBox();
-            this.tb_Username = new System.Windows.Forms.TextBox();
             this.tb_Password = new System.Windows.Forms.TextBox();
             this.btn_Login = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmb_Username = new System.Windows.Forms.ComboBox();
             this.pnl_Head.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -110,15 +110,7 @@
             this.Cmb_User_Role.Name = "Cmb_User_Role";
             this.Cmb_User_Role.Size = new System.Drawing.Size(305, 39);
             this.Cmb_User_Role.TabIndex = 1;
-            // 
-            // tb_Username
-            // 
-            this.tb_Username.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Username.Location = new System.Drawing.Point(899, 349);
-            this.tb_Username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_Username.Name = "tb_Username";
-            this.tb_Username.Size = new System.Drawing.Size(305, 39);
-            this.tb_Username.TabIndex = 2;
+            this.Cmb_User_Role.SelectedIndexChanged += new System.EventHandler(this.Cmb_User_Role_SelectedIndexChanged);
             // 
             // tb_Password
             // 
@@ -153,6 +145,21 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // cmb_Username
+            // 
+            this.cmb_Username.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Username.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Username.FormattingEnabled = true;
+            this.cmb_Username.Items.AddRange(new object[] {
+            "Admin",
+            "Cashier",
+            "Worker"});
+            this.cmb_Username.Location = new System.Drawing.Point(898, 351);
+            this.cmb_Username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_Username.Name = "cmb_Username";
+            this.cmb_Username.Size = new System.Drawing.Size(305, 39);
+            this.cmb_Username.TabIndex = 7;
+            // 
             // Frm_Tiles_APP_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -160,10 +167,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 753);
+            this.Controls.Add(this.cmb_Username);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.tb_Password);
-            this.Controls.Add(this.tb_Username);
             this.Controls.Add(this.Cmb_User_Role);
             this.Controls.Add(this.lbl_Password);
             this.Controls.Add(this.lbl_Username);
@@ -191,10 +198,10 @@
         private System.Windows.Forms.Label lbl_Username;
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.ComboBox Cmb_User_Role;
-        private System.Windows.Forms.TextBox tb_Username;
         private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cmb_Username;
     }
 }
 

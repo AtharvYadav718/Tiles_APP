@@ -16,7 +16,7 @@ namespace Tiles_APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Menu_Form());
+            Application.Run(new Frm_Add_User());
         }
     }
 }
