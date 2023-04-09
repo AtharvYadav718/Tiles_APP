@@ -58,7 +58,7 @@
             this.gb_ClothType_Details.Margin = new System.Windows.Forms.Padding(4);
             this.gb_ClothType_Details.Name = "gb_ClothType_Details";
             this.gb_ClothType_Details.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_ClothType_Details.Size = new System.Drawing.Size(1153, 446);
+            this.gb_ClothType_Details.Size = new System.Drawing.Size(1153, 486);
             this.gb_ClothType_Details.TabIndex = 6;
             this.gb_ClothType_Details.TabStop = false;
             this.gb_ClothType_Details.Text = "Add New User";
@@ -66,7 +66,7 @@
             // tb_Confirm_Password
             // 
             this.tb_Confirm_Password.Font = new System.Drawing.Font("Mongolian Baiti", 16F);
-            this.tb_Confirm_Password.Location = new System.Drawing.Point(615, 351);
+            this.tb_Confirm_Password.Location = new System.Drawing.Point(615, 368);
             this.tb_Confirm_Password.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Confirm_Password.MaxLength = 40;
             this.tb_Confirm_Password.Name = "tb_Confirm_Password";
@@ -76,7 +76,7 @@
             // tb_Username
             // 
             this.tb_Username.Font = new System.Drawing.Font("Mongolian Baiti", 16F);
-            this.tb_Username.Location = new System.Drawing.Point(613, 158);
+            this.tb_Username.Location = new System.Drawing.Point(613, 168);
             this.tb_Username.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Username.MaxLength = 10;
             this.tb_Username.Name = "tb_Username";
@@ -86,7 +86,7 @@
             // tb_Password
             // 
             this.tb_Password.Font = new System.Drawing.Font("Mongolian Baiti", 16F);
-            this.tb_Password.Location = new System.Drawing.Point(614, 255);
+            this.tb_Password.Location = new System.Drawing.Point(614, 265);
             this.tb_Password.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Password.MaxLength = 40;
             this.tb_Password.Name = "tb_Password";
@@ -97,12 +97,12 @@
             // 
             this.lbl_Confirm_Password.AutoSize = true;
             this.lbl_Confirm_Password.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Confirm_Password.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Confirm_Password.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Confirm_Password.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_Confirm_Password.Location = new System.Drawing.Point(267, 352);
+            this.lbl_Confirm_Password.Location = new System.Drawing.Point(267, 369);
             this.lbl_Confirm_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Confirm_Password.Name = "lbl_Confirm_Password";
-            this.lbl_Confirm_Password.Size = new System.Drawing.Size(252, 35);
+            this.lbl_Confirm_Password.Size = new System.Drawing.Size(267, 36);
             this.lbl_Confirm_Password.TabIndex = 22;
             this.lbl_Confirm_Password.Text = "Confirm Password";
             // 
@@ -110,12 +110,12 @@
             // 
             this.lbl_Password.AutoSize = true;
             this.lbl_Password.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Password.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Password.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Password.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_Password.Location = new System.Drawing.Point(266, 256);
+            this.lbl_Password.Location = new System.Drawing.Point(266, 266);
             this.lbl_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(137, 35);
+            this.lbl_Password.Size = new System.Drawing.Size(148, 36);
             this.lbl_Password.TabIndex = 22;
             this.lbl_Password.Text = "Password";
             // 
@@ -123,12 +123,12 @@
             // 
             this.lbl_Username.AutoSize = true;
             this.lbl_Username.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Username.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Username.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Username.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_Username.Location = new System.Drawing.Point(266, 151);
+            this.lbl_Username.Location = new System.Drawing.Point(266, 161);
             this.lbl_Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(141, 35);
+            this.lbl_Username.Size = new System.Drawing.Size(156, 36);
             this.lbl_Username.TabIndex = 21;
             this.lbl_Username.Text = "Username";
             // 
@@ -142,7 +142,7 @@
             "Manager",
             "Cashier",
             "Staff"});
-            this.cmb_UserRole.Location = new System.Drawing.Point(613, 49);
+            this.cmb_UserRole.Location = new System.Drawing.Point(613, 59);
             this.cmb_UserRole.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_UserRole.MaxLength = 20;
             this.cmb_UserRole.Name = "cmb_UserRole";
@@ -153,12 +153,12 @@
             // 
             this.lbl_UserRole.AutoSize = true;
             this.lbl_UserRole.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_UserRole.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UserRole.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UserRole.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_UserRole.Location = new System.Drawing.Point(266, 50);
+            this.lbl_UserRole.Location = new System.Drawing.Point(266, 60);
             this.lbl_UserRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_UserRole.Name = "lbl_UserRole";
-            this.lbl_UserRole.Size = new System.Drawing.Size(139, 35);
+            this.lbl_UserRole.Size = new System.Drawing.Size(147, 36);
             this.lbl_UserRole.TabIndex = 20;
             this.lbl_UserRole.Text = "User Role";
             // 
@@ -167,7 +167,7 @@
             this.btn_Save.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.btn_Save.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.Crimson;
-            this.btn_Save.Location = new System.Drawing.Point(569, 574);
+            this.btn_Save.Location = new System.Drawing.Point(521, 610);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(275, 58);
@@ -186,7 +186,8 @@
             this.Controls.Add(this.gb_ClothType_Details);
             this.Controls.Add(this.btn_Save);
             this.Name = "Frm_Add_User";
-            this.Text = "Frm_Add_User";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Add User";
             this.gb_ClothType_Details.ResumeLayout(false);
             this.gb_ClothType_Details.PerformLayout();
             this.ResumeLayout(false);

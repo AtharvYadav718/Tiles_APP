@@ -110,7 +110,6 @@
             this.Cmb_User_Role.Name = "Cmb_User_Role";
             this.Cmb_User_Role.Size = new System.Drawing.Size(305, 39);
             this.Cmb_User_Role.TabIndex = 1;
-            this.Cmb_User_Role.SelectedIndexChanged += new System.EventHandler(this.Cmb_User_Role_SelectedIndexChanged);
             // 
             // tb_Password
             // 

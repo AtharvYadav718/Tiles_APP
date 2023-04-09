@@ -62,23 +62,23 @@
             // tb_Admin_Password
             // 
             this.tb_Admin_Password.Font = new System.Drawing.Font("Mongolian Baiti", 16F);
-            this.tb_Admin_Password.Location = new System.Drawing.Point(585, 322);
+            this.tb_Admin_Password.Location = new System.Drawing.Point(612, 322);
             this.tb_Admin_Password.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Admin_Password.MaxLength = 40;
             this.tb_Admin_Password.Name = "tb_Admin_Password";
-            this.tb_Admin_Password.Size = new System.Drawing.Size(360, 38);
+            this.tb_Admin_Password.Size = new System.Drawing.Size(402, 38);
             this.tb_Admin_Password.TabIndex = 3;
             // 
             // lbl_Admin_Password
             // 
             this.lbl_Admin_Password.AutoSize = true;
             this.lbl_Admin_Password.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Admin_Password.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Admin_Password.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Admin_Password.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_Admin_Password.Location = new System.Drawing.Point(237, 323);
+            this.lbl_Admin_Password.Location = new System.Drawing.Point(264, 323);
             this.lbl_Admin_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Admin_Password.Name = "lbl_Admin_Password";
-            this.lbl_Admin_Password.Size = new System.Drawing.Size(231, 35);
+            this.lbl_Admin_Password.Size = new System.Drawing.Size(247, 36);
             this.lbl_Admin_Password.TabIndex = 22;
             this.lbl_Admin_Password.Text = "Admin Password";
             // 
@@ -86,12 +86,12 @@
             // 
             this.lbl_Username.AutoSize = true;
             this.lbl_Username.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Username.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Username.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Username.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_Username.Location = new System.Drawing.Point(237, 212);
+            this.lbl_Username.Location = new System.Drawing.Point(264, 212);
             this.lbl_Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(141, 35);
+            this.lbl_Username.Size = new System.Drawing.Size(156, 36);
             this.lbl_Username.TabIndex = 21;
             this.lbl_Username.Text = "Username";
             // 
@@ -100,11 +100,11 @@
             this.cmb_Username.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Username.Font = new System.Drawing.Font("Mongolian Baiti", 16F);
             this.cmb_Username.FormattingEnabled = true;
-            this.cmb_Username.Location = new System.Drawing.Point(584, 214);
+            this.cmb_Username.Location = new System.Drawing.Point(611, 214);
             this.cmb_Username.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_Username.MaxLength = 20;
             this.cmb_Username.Name = "cmb_Username";
-            this.cmb_Username.Size = new System.Drawing.Size(361, 37);
+            this.cmb_Username.Size = new System.Drawing.Size(403, 37);
             this.cmb_Username.TabIndex = 1;
             // 
             // cmb_UserRole
@@ -117,23 +117,23 @@
             "Manager",
             "Cashier",
             "Staff"});
-            this.cmb_UserRole.Location = new System.Drawing.Point(584, 108);
+            this.cmb_UserRole.Location = new System.Drawing.Point(611, 108);
             this.cmb_UserRole.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_UserRole.MaxLength = 20;
             this.cmb_UserRole.Name = "cmb_UserRole";
-            this.cmb_UserRole.Size = new System.Drawing.Size(361, 37);
+            this.cmb_UserRole.Size = new System.Drawing.Size(403, 37);
             this.cmb_UserRole.TabIndex = 1;
             // 
             // lbl_UserRole
             // 
             this.lbl_UserRole.AutoSize = true;
             this.lbl_UserRole.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_UserRole.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UserRole.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UserRole.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_UserRole.Location = new System.Drawing.Point(237, 109);
+            this.lbl_UserRole.Location = new System.Drawing.Point(264, 109);
             this.lbl_UserRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_UserRole.Name = "lbl_UserRole";
-            this.lbl_UserRole.Size = new System.Drawing.Size(139, 35);
+            this.lbl_UserRole.Size = new System.Drawing.Size(147, 36);
             this.lbl_UserRole.TabIndex = 20;
             this.lbl_UserRole.Text = "User Role";
             // 
@@ -159,7 +159,8 @@
             this.Controls.Add(this.gb_ClothType_Details);
             this.Controls.Add(this.btn_Delete_User);
             this.Name = "Frm_Delete_User";
-            this.Text = "Frm_Delete_User";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Delete User";
             this.gb_ClothType_Details.ResumeLayout(false);
             this.gb_ClothType_Details.PerformLayout();
             this.ResumeLayout(false);

@@ -23,23 +23,40 @@ namespace Tiles_APP
             Cmb_User_Role.Focus();
         }
 
-        public static void Bind_ComboBox(string ColumnName, ComboBox CMB, string Query)
+        void Bind_ComboBox()
         {
-            CMB.Items.Clear();
+            Cmb_User_Role.Items.Clear();
             Tiles_App_Sherard_Content.Con_Open();
-            SqlCommand Cmd = new SqlCommand();
-            Cmd.Connection = Tiles_App_Sherard_Content.Con;
-            Cmd.CommandText = "Select Distinct(User_Role) from Login_Details";
+            SqlCommand cmd = new SqlCommand();
 
-            SqlDataReader Dr = Cmd.ExecuteReader();
-            while (Dr.Read())
+            cmd.Connection = Tiles_App_Sherard_Content.Con;
+            cmd.CommandText = "Select Distinct(User_Role) from Login_Details";
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
             {
-                CMB.Items.Add(Dr["User_Role"].ToString());
+                Cmb_User_Role.Items.Add(dr["User_Role"].ToString());
             }
 
-            Dr.Dispose();
-           Tiles_App_Sherard_Content.Con_Close();
+            dr.Close();
+            cmd.Dispose();
+
+
+            cmd.Connection = Tiles_App_Sherard_Content.Con;
+            cmd.CommandText = "Select Distinct(Username) from Login_Details ";
+
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                cmb_Username.Items.Add(dr["Username"].ToString());
+            }
+            dr.Close();
+
+            Tiles_App_Sherard_Content.Con_Close();
         }
+
         private void btn_Login_Click(object sender, EventArgs e)
         {
             int Cnt = 0;
@@ -48,8 +65,9 @@ namespace Tiles_APP
 
             SqlCommand Cmd = new SqlCommand();
             Cmd.Connection =Tiles_App_Sherard_Content.Con;
-            Cmd.CommandText = "Select Count(*) From Login_Details where User_Role=@URole And Username= @Uname And Password= @Pwd";
+            Cmd.CommandText = "Select Count(*) From Login_Details where User_ID=@U_ID And User_Role=@URole And Username= @Uname And Password= @Pwd";
 
+            Cmd.Parameters.Add("U_ID", SqlDbType.NVarChar).Value = cmb_Username.Text;
             Cmd.Parameters.Add("Uname", SqlDbType.NVarChar).Value = cmb_Username.Text;
             Cmd.Parameters.Add("Pwd", SqlDbType.NVarChar).Value = tb_Password.Text;
             Cmd.Parameters.Add("URole", SqlDbType.VarChar).Value = Cmb_User_Role.Text;
@@ -94,11 +112,6 @@ namespace Tiles_APP
 
             Tiles_App_Sherard_Content.Con_Close();
  
-        }
-
-        private void Cmb_User_Role_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Bind_ComboBox("Username", cmb_Username, "Select Username from Login_Details where User_Role = '" + Cmb_User_Role.Text + "'");
         }
     }
 }
