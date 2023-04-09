@@ -106,6 +106,12 @@
     <Compile Include="Frm_Dead_Stock.Designer.cs">
       <DependentUpon>Frm_Dead_Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Delete_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Delete_User.Designer.cs">
+      <DependentUpon>Frm_Delete_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Invoice_List.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,12 @@
     </Compile>
     <Compile Include="Frm_Update_Product_Details.Designer.cs">
       <DependentUpon>Frm_Update_Product_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Update_User_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Update_User_Password.Designer.cs">
+      <DependentUpon>Frm_Update_User_Password.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -288,6 +300,9 @@
     <EmbeddedResource Include="Frm_Dead_Stock.resx">
       <DependentUpon>Frm_Dead_Stock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Delete_User.resx">
+      <DependentUpon>Frm_Delete_User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Invoice_List.resx">
       <DependentUpon>Frm_Invoice_List.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +335,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Update_Product_Details.resx">
       <DependentUpon>Frm_Update_Product_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Update_User_Password.resx">
+      <DependentUpon>Frm_Update_User_Password.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

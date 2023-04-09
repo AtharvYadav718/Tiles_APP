@@ -110,6 +110,7 @@
             this.Cmb_User_Role.Name = "Cmb_User_Role";
             this.Cmb_User_Role.Size = new System.Drawing.Size(305, 39);
             this.Cmb_User_Role.TabIndex = 1;
+            this.Cmb_User_Role.SelectedIndexChanged += new System.EventHandler(this.Cmb_User_Role_SelectedIndexChanged);
             // 
             // tb_Password
             // 
@@ -149,10 +150,6 @@
             this.cmb_Username.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Username.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Username.FormattingEnabled = true;
-            this.cmb_Username.Items.AddRange(new object[] {
-            "Admin",
-            "Cashier",
-            "Worker"});
             this.cmb_Username.Location = new System.Drawing.Point(898, 351);
             this.cmb_Username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_Username.Name = "cmb_Username";
