@@ -19,7 +19,7 @@ namespace Tiles_APP
         }
         private void Frm_Tiles_APP_Login_Load(object sender, EventArgs e)
         {
-             Bind_ComboBox();
+            Bind_ComboBox();
             Cmb_User_Role.SelectedIndex = 0;
             Cmb_User_Role.Focus();
         }
@@ -42,18 +42,6 @@ namespace Tiles_APP
 
             dr.Close();
             cmd.Dispose();
-
-
-            cmd.Connection = Tiles_App_Sherard_Content.Con;
-            cmd.CommandText = "Select Distinct(Username) from Login_Details ";
-
-            dr = cmd.ExecuteReader();
-
-            while (dr.Read())
-            {
-                cmb_Username.Items.Add(dr["Username"].ToString());
-            }
-            dr.Close();
 
             Tiles_App_Sherard_Content.Con_Close();
         }

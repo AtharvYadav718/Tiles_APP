@@ -38,6 +38,8 @@
             this.cmb_UserRole = new System.Windows.Forms.ComboBox();
             this.lbl_UserRole = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
+            this.btn_Delete_User = new System.Windows.Forms.Button();
+            this.btn_Update_User = new System.Windows.Forms.Button();
             this.gb_ClothType_Details.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,14 +169,42 @@
             this.btn_Save.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.btn_Save.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.Crimson;
-            this.btn_Save.Location = new System.Drawing.Point(521, 610);
+            this.btn_Save.Location = new System.Drawing.Point(538, 610);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(275, 58);
             this.btn_Save.TabIndex = 7;
-            this.btn_Save.Text = "Add User";
+            this.btn_Save.Text = "Save ";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
+            // btn_Delete_User
+            // 
+            this.btn_Delete_User.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btn_Delete_User.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete_User.ForeColor = System.Drawing.Color.Crimson;
+            this.btn_Delete_User.Location = new System.Drawing.Point(940, 610);
+            this.btn_Delete_User.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Delete_User.Name = "btn_Delete_User";
+            this.btn_Delete_User.Size = new System.Drawing.Size(275, 58);
+            this.btn_Delete_User.TabIndex = 8;
+            this.btn_Delete_User.Text = "Delete User";
+            this.btn_Delete_User.UseVisualStyleBackColor = false;
+            this.btn_Delete_User.Click += new System.EventHandler(this.btn_Delete_User_Click);
+            // 
+            // btn_Update_User
+            // 
+            this.btn_Update_User.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btn_Update_User.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update_User.ForeColor = System.Drawing.Color.Crimson;
+            this.btn_Update_User.Location = new System.Drawing.Point(109, 610);
+            this.btn_Update_User.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Update_User.Name = "btn_Update_User";
+            this.btn_Update_User.Size = new System.Drawing.Size(281, 58);
+            this.btn_Update_User.TabIndex = 9;
+            this.btn_Update_User.Text = "Update User";
+            this.btn_Update_User.UseVisualStyleBackColor = false;
+            this.btn_Update_User.Click += new System.EventHandler(this.btn_Update_User_Click);
             // 
             // Frm_Add_User
             // 
@@ -183,6 +213,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1285, 703);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Update_User);
+            this.Controls.Add(this.btn_Delete_User);
             this.Controls.Add(this.gb_ClothType_Details);
             this.Controls.Add(this.btn_Save);
             this.Name = "Frm_Add_User";
@@ -206,5 +238,7 @@
         private System.Windows.Forms.ComboBox cmb_UserRole;
         private System.Windows.Forms.Label lbl_UserRole;
         private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.Button btn_Delete_User;
+        private System.Windows.Forms.Button btn_Update_User;
     }
 }

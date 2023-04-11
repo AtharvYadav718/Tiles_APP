@@ -25,6 +25,7 @@ namespace Tiles_APP
             pnl_Sale_Submenu.Visible = false;
             pnl_Stock_Submenu.Visible = false;
             pnl_Reports_Submenu.Visible = false;
+            pnl_User_Master_Submenu.Visible = false;
         }
 
         private void hideSubmenu()
@@ -39,6 +40,8 @@ namespace Tiles_APP
                 pnl_Stock_Submenu.Visible = false;
             if (pnl_Reports_Submenu.Visible == true)
                 pnl_Reports_Submenu.Visible = false;
+            if (pnl_User_Master_Submenu.Visible == true)
+                pnl_User_Master_Submenu.Visible = false;
         }
 
         private void showSubmenu(Panel Submenu)
@@ -182,6 +185,16 @@ namespace Tiles_APP
             lbl_Head.Text = "Shop Total Collection";
         }
 
+        private void btn_User_Master_Click(object sender, EventArgs e)
+        {
+            showSubmenu(pnl_User_Master_Submenu);
+        }
+        private void btn_Add_User_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Frm_Add_User());
+            hideSubmenu();
+            lbl_Head.Text = "User Master";
+        }
         private Form activeForm=null;
         private void openChildForm(Form childForm)
         {
@@ -198,6 +211,6 @@ namespace Tiles_APP
             childForm.BringToFront();
             childForm.Show();
 
-        }      
+        }       
     }
 }

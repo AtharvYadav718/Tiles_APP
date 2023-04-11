@@ -150,6 +150,7 @@
             this.cmb_UserRole.Name = "cmb_UserRole";
             this.cmb_UserRole.Size = new System.Drawing.Size(373, 37);
             this.cmb_UserRole.TabIndex = 1;
+            this.cmb_UserRole.SelectedIndexChanged += new System.EventHandler(this.cmb_UserRole_SelectedIndexChanged);
             // 
             // lbl_UserRole
             // 
@@ -176,6 +177,7 @@
             this.btn_Update_User.TabIndex = 17;
             this.btn_Update_User.Text = "Update User";
             this.btn_Update_User.UseVisualStyleBackColor = false;
+            this.btn_Update_User.Click += new System.EventHandler(this.btn_Update_User_Click);
             // 
             // Frm_Update_User_Password
             // 

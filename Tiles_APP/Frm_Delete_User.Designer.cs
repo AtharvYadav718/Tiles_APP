@@ -123,6 +123,7 @@
             this.cmb_UserRole.Name = "cmb_UserRole";
             this.cmb_UserRole.Size = new System.Drawing.Size(403, 37);
             this.cmb_UserRole.TabIndex = 1;
+            this.cmb_UserRole.SelectedIndexChanged += new System.EventHandler(this.cmb_UserRole_SelectedIndexChanged);
             // 
             // lbl_UserRole
             // 
@@ -149,6 +150,7 @@
             this.btn_Delete_User.TabIndex = 19;
             this.btn_Delete_User.Text = "Delete User";
             this.btn_Delete_User.UseVisualStyleBackColor = false;
+            this.btn_Delete_User.Click += new System.EventHandler(this.btn_Delete_User_Click);
             // 
             // Frm_Delete_User
             // 

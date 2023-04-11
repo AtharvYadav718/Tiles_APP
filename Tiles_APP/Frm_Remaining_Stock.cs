@@ -66,7 +66,7 @@ namespace Tiles_APP
 
             dr.Close();
 
-            Tiles_App_Sherard_Content.Bind_Grid(dgv_Remaining_Stock, "Select Stock_Quantity,Stock_Unit From Product_Details where Category_Name = '" + cmb_Subcategory_Name.Text + "'");
+            Tiles_App_Sherard_Content.Bind_Grid(dgv_Remaining_Stock, "Select Category_Name,Subcategory_Name,Product_Name,Supplier_Name,Sales_Rate,Stock_Quantity,Stock_Unit From Product_Details where Category_Name = '" + Cmb_Category_Name.Text + "'");
 
             Tiles_App_Sherard_Content.Con_Close();
         }
@@ -85,14 +85,14 @@ namespace Tiles_APP
             }
             dr.Close();
 
-            Tiles_App_Sherard_Content.Bind_Grid(dgv_Remaining_Stock, "Select Stock_Quantity,Stock_Unit From Product_Details where Category_Name = '" + Cmb_Category_Name.Text + "' And Subcategory_Name = '" + cmb_Subcategory_Name.Text + "'");
+            Tiles_App_Sherard_Content.Bind_Grid(dgv_Remaining_Stock, "Select Category_Name,Subcategory_Name,Product_Name,Supplier_Name,Sales_Rate,Stock_Quantity,Stock_Unit From Product_Details where Category_Name = '" + Cmb_Category_Name.Text + "' And Subcategory_Name = '" + cmb_Subcategory_Name.Text + "'");
 
             Tiles_App_Sherard_Content.Con_Close();
         }
 
         private void cmb_Product_Name_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Tiles_App_Sherard_Content.Bind_Grid(dgv_Remaining_Stock, "Select Stock_Quantity,Stock_Unit From Product_Details where Category_Name = '" + Cmb_Category_Name.Text + "' And Subcategory_Name = '" + cmb_Subcategory_Name.Text + "' And Product_Name = '" + cmb_Product_Name.Text + "' ");
+            Tiles_App_Sherard_Content.Bind_Grid(dgv_Remaining_Stock, "Select Category_Name,Subcategory_Name,Product_Name,Supplier_Name,Sales_Rate,Stock_Quantity,Stock_Unit From Product_Details where Category_Name = '" + Cmb_Category_Name.Text + "' And Subcategory_Name = '" + cmb_Subcategory_Name.Text + "' And Product_Name = '" + cmb_Product_Name.Text + "' ");
 
         }
 
@@ -102,7 +102,7 @@ namespace Tiles_APP
             cmb_Subcategory_Name.SelectedIndex = -1;
             cmb_Product_Name.SelectedIndex = -1;
 
-            Tiles_App_Sherard_Content.Bind_Grid(dgv_Remaining_Stock, "Select  Stock_Quantity,Stock_Unit From Product_Details");
+            Tiles_App_Sherard_Content.Bind_Grid(dgv_Remaining_Stock, "Select  Category_Name,Subcategory_Name,Product_Name,Supplier_Name,Sales_Rate,Stock_Quantity,Stock_Unit From Product_Details");
         }       
     }
 }

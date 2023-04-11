@@ -55,5 +55,27 @@ namespace Tiles_APP
             }
 
         }
+
+        private void btn_Delete_User_Click(object sender, EventArgs e)
+        {
+            Frm_Delete_User Obj = new Frm_Delete_User() { TopLevel = false, TopMost = true };
+            Obj.FormBorderStyle = FormBorderStyle.None;
+
+            Frm_Menu_Form.pnl_ChildForm.Controls.Clear();
+            Frm_Menu_Form.pnl_ChildForm.Controls.Add(Obj);
+
+            Obj.Show();
+        }
+
+        private void btn_Update_User_Click(object sender, EventArgs e)
+        {
+            Frm_Update_User_Password Obj = new Frm_Update_User_Password() { TopLevel = false, TopMost = true };
+            Obj.FormBorderStyle = FormBorderStyle.None;
+
+            Frm_Menu_Form.pnl_ChildForm.Controls.Clear();
+            Frm_Menu_Form.pnl_ChildForm.Controls.Add(Obj);
+
+            Obj.Show();
+        }
     }
 }
