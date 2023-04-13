@@ -43,7 +43,7 @@
             // 
             // gb_ClothType_Details
             // 
-            this.gb_ClothType_Details.BackColor = System.Drawing.Color.BurlyWood;
+            this.gb_ClothType_Details.BackColor = System.Drawing.Color.LightSkyBlue;
             this.gb_ClothType_Details.Controls.Add(this.tb_Confirm_Password);
             this.gb_ClothType_Details.Controls.Add(this.tb_Password);
             this.gb_ClothType_Details.Controls.Add(this.lbl_Confirm_Password);
@@ -167,13 +167,13 @@
             // 
             // btn_Update_User
             // 
-            this.btn_Update_User.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.btn_Update_User.Font = new System.Drawing.Font("Cambria", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update_User.ForeColor = System.Drawing.Color.Crimson;
-            this.btn_Update_User.Location = new System.Drawing.Point(479, 604);
+            this.btn_Update_User.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_Update_User.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update_User.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_Update_User.Location = new System.Drawing.Point(460, 604);
             this.btn_Update_User.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Update_User.Name = "btn_Update_User";
-            this.btn_Update_User.Size = new System.Drawing.Size(325, 64);
+            this.btn_Update_User.Size = new System.Drawing.Size(321, 71);
             this.btn_Update_User.TabIndex = 17;
             this.btn_Update_User.Text = "Update User";
             this.btn_Update_User.UseVisualStyleBackColor = false;

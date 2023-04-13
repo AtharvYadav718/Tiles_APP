@@ -82,10 +82,10 @@
             // 
             this.btn_Search.BackColor = System.Drawing.Color.LightSalmon;
             this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search.Location = new System.Drawing.Point(428, 33);
+            this.btn_Search.Location = new System.Drawing.Point(427, 24);
             this.btn_Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(157, 49);
+            this.btn_Search.Size = new System.Drawing.Size(157, 56);
             this.btn_Search.TabIndex = 95;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
@@ -122,10 +122,10 @@
             // lbl_DOB
             // 
             this.lbl_DOB.AutoSize = true;
-            this.lbl_DOB.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DOB.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_DOB.Location = new System.Drawing.Point(138, 253);
             this.lbl_DOB.Name = "lbl_DOB";
-            this.lbl_DOB.Size = new System.Drawing.Size(97, 32);
+            this.lbl_DOB.Size = new System.Drawing.Size(115, 34);
             this.lbl_DOB.TabIndex = 63;
             this.lbl_DOB.Text = "D.O.B ";
             // 
@@ -200,50 +200,50 @@
             // lbl_Aadhar_Number
             // 
             this.lbl_Aadhar_Number.AutoSize = true;
-            this.lbl_Aadhar_Number.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Aadhar_Number.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Aadhar_Number.Location = new System.Drawing.Point(17, 338);
             this.lbl_Aadhar_Number.Name = "lbl_Aadhar_Number";
-            this.lbl_Aadhar_Number.Size = new System.Drawing.Size(216, 32);
+            this.lbl_Aadhar_Number.Size = new System.Drawing.Size(234, 34);
             this.lbl_Aadhar_Number.TabIndex = 59;
             this.lbl_Aadhar_Number.Text = "Aadhar Number ";
             // 
             // lbl_Alt_Mob_No
             // 
             this.lbl_Alt_Mob_No.AutoSize = true;
-            this.lbl_Alt_Mob_No.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Alt_Mob_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Alt_Mob_No.Location = new System.Drawing.Point(42, 514);
             this.lbl_Alt_Mob_No.Name = "lbl_Alt_Mob_No";
-            this.lbl_Alt_Mob_No.Size = new System.Drawing.Size(176, 32);
+            this.lbl_Alt_Mob_No.Size = new System.Drawing.Size(201, 34);
             this.lbl_Alt_Mob_No.TabIndex = 59;
             this.lbl_Alt_Mob_No.Text = "Alt. Mob. No ";
             // 
             // lbl_Mobile_Number
             // 
             this.lbl_Mobile_Number.AutoSize = true;
-            this.lbl_Mobile_Number.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Mobile_Number.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Mobile_Number.Location = new System.Drawing.Point(19, 427);
             this.lbl_Mobile_Number.Name = "lbl_Mobile_Number";
-            this.lbl_Mobile_Number.Size = new System.Drawing.Size(209, 32);
+            this.lbl_Mobile_Number.Size = new System.Drawing.Size(229, 34);
             this.lbl_Mobile_Number.TabIndex = 59;
             this.lbl_Mobile_Number.Text = "Mobile Number ";
             // 
             // lbl_Employeee_Name
             // 
             this.lbl_Employeee_Name.AutoSize = true;
-            this.lbl_Employeee_Name.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Employeee_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Employeee_Name.Location = new System.Drawing.Point(24, 112);
             this.lbl_Employeee_Name.Name = "lbl_Employeee_Name";
-            this.lbl_Employeee_Name.Size = new System.Drawing.Size(213, 32);
+            this.lbl_Employeee_Name.Size = new System.Drawing.Size(236, 34);
             this.lbl_Employeee_Name.TabIndex = 59;
             this.lbl_Employeee_Name.Text = "Employee Name ";
             // 
             // lbl_Gender
             // 
             this.lbl_Gender.AutoSize = true;
-            this.lbl_Gender.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Gender.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Gender.Location = new System.Drawing.Point(132, 177);
             this.lbl_Gender.Name = "lbl_Gender";
-            this.lbl_Gender.Size = new System.Drawing.Size(110, 32);
+            this.lbl_Gender.Size = new System.Drawing.Size(122, 34);
             this.lbl_Gender.TabIndex = 59;
             this.lbl_Gender.Text = "Gender ";
             // 
@@ -260,10 +260,10 @@
             // lbl_Employee_ID
             // 
             this.lbl_Employee_ID.AutoSize = true;
-            this.lbl_Employee_ID.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Employee_ID.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Employee_ID.Location = new System.Drawing.Point(64, 37);
             this.lbl_Employee_ID.Name = "lbl_Employee_ID";
-            this.lbl_Employee_ID.Size = new System.Drawing.Size(175, 32);
+            this.lbl_Employee_ID.Size = new System.Drawing.Size(195, 34);
             this.lbl_Employee_ID.TabIndex = 59;
             this.lbl_Employee_ID.Text = "Employee ID ";
             // 
@@ -280,10 +280,10 @@
             // lbl_PAN_Number
             // 
             this.lbl_PAN_Number.AutoSize = true;
-            this.lbl_PAN_Number.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PAN_Number.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_PAN_Number.Location = new System.Drawing.Point(25, 428);
             this.lbl_PAN_Number.Name = "lbl_PAN_Number";
-            this.lbl_PAN_Number.Size = new System.Drawing.Size(181, 32);
+            this.lbl_PAN_Number.Size = new System.Drawing.Size(203, 34);
             this.lbl_PAN_Number.TabIndex = 67;
             this.lbl_PAN_Number.Text = "PAN Number ";
             // 
@@ -301,10 +301,10 @@
             // lbl_Joining_Date
             // 
             this.lbl_Joining_Date.AutoSize = true;
-            this.lbl_Joining_Date.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Joining_Date.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Joining_Date.Location = new System.Drawing.Point(36, 33);
             this.lbl_Joining_Date.Name = "lbl_Joining_Date";
-            this.lbl_Joining_Date.Size = new System.Drawing.Size(173, 32);
+            this.lbl_Joining_Date.Size = new System.Drawing.Size(192, 34);
             this.lbl_Joining_Date.TabIndex = 65;
             this.lbl_Joining_Date.Text = "Joining Date ";
             // 
@@ -363,10 +363,10 @@
             // lbl_Salary
             // 
             this.lbl_Salary.AutoSize = true;
-            this.lbl_Salary.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Salary.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Salary.Location = new System.Drawing.Point(117, 514);
             this.lbl_Salary.Name = "lbl_Salary";
-            this.lbl_Salary.Size = new System.Drawing.Size(99, 32);
+            this.lbl_Salary.Size = new System.Drawing.Size(105, 34);
             this.lbl_Salary.TabIndex = 67;
             this.lbl_Salary.Text = "Salary ";
             // 
@@ -382,10 +382,10 @@
             // lbl_Qualification
             // 
             this.lbl_Qualification.AutoSize = true;
-            this.lbl_Qualification.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Qualification.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Qualification.Location = new System.Drawing.Point(33, 348);
             this.lbl_Qualification.Name = "lbl_Qualification";
-            this.lbl_Qualification.Size = new System.Drawing.Size(179, 32);
+            this.lbl_Qualification.Size = new System.Drawing.Size(197, 34);
             this.lbl_Qualification.TabIndex = 67;
             this.lbl_Qualification.Text = "Qualification ";
             // 
@@ -401,20 +401,20 @@
             // lbl_Email_ID
             // 
             this.lbl_Email_ID.AutoSize = true;
-            this.lbl_Email_ID.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Email_ID.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Email_ID.Location = new System.Drawing.Point(67, 264);
             this.lbl_Email_ID.Name = "lbl_Email_ID";
-            this.lbl_Email_ID.Size = new System.Drawing.Size(142, 32);
+            this.lbl_Email_ID.Size = new System.Drawing.Size(159, 34);
             this.lbl_Email_ID.TabIndex = 67;
             this.lbl_Email_ID.Text = "E-Mail ID ";
             // 
             // lbl_Post
             // 
             this.lbl_Post.AutoSize = true;
-            this.lbl_Post.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Post.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Post.Location = new System.Drawing.Point(143, 184);
             this.lbl_Post.Name = "lbl_Post";
-            this.lbl_Post.Size = new System.Drawing.Size(73, 32);
+            this.lbl_Post.Size = new System.Drawing.Size(80, 34);
             this.lbl_Post.TabIndex = 67;
             this.lbl_Post.Text = "Post ";
             // 
@@ -430,10 +430,10 @@
             // lbl_Experience
             // 
             this.lbl_Experience.AutoSize = true;
-            this.lbl_Experience.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Experience.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Experience.Location = new System.Drawing.Point(60, 114);
             this.lbl_Experience.Name = "lbl_Experience";
-            this.lbl_Experience.Size = new System.Drawing.Size(154, 32);
+            this.lbl_Experience.Size = new System.Drawing.Size(167, 34);
             this.lbl_Experience.TabIndex = 67;
             this.lbl_Experience.Text = "Experience ";
             // 
@@ -444,7 +444,7 @@
             this.btn_Update.Location = new System.Drawing.Point(693, 629);
             this.btn_Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(157, 63);
+            this.btn_Update.Size = new System.Drawing.Size(185, 63);
             this.btn_Update.TabIndex = 99;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;

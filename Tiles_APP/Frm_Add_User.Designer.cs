@@ -45,7 +45,7 @@
             // 
             // gb_ClothType_Details
             // 
-            this.gb_ClothType_Details.BackColor = System.Drawing.Color.BurlyWood;
+            this.gb_ClothType_Details.BackColor = System.Drawing.Color.LightSkyBlue;
             this.gb_ClothType_Details.Controls.Add(this.tb_Confirm_Password);
             this.gb_ClothType_Details.Controls.Add(this.tb_Username);
             this.gb_ClothType_Details.Controls.Add(this.tb_Password);
@@ -166,9 +166,9 @@
             // 
             // btn_Save
             // 
-            this.btn_Save.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.btn_Save.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.ForeColor = System.Drawing.Color.Crimson;
+            this.btn_Save.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Save.Location = new System.Drawing.Point(538, 610);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
@@ -180,9 +180,9 @@
             // 
             // btn_Delete_User
             // 
-            this.btn_Delete_User.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.btn_Delete_User.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Delete_User.ForeColor = System.Drawing.Color.Crimson;
+            this.btn_Delete_User.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_Delete_User.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete_User.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Delete_User.Location = new System.Drawing.Point(940, 610);
             this.btn_Delete_User.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Delete_User.Name = "btn_Delete_User";
@@ -194,9 +194,9 @@
             // 
             // btn_Update_User
             // 
-            this.btn_Update_User.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.btn_Update_User.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update_User.ForeColor = System.Drawing.Color.Crimson;
+            this.btn_Update_User.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_Update_User.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update_User.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Update_User.Location = new System.Drawing.Point(109, 610);
             this.btn_Update_User.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Update_User.Name = "btn_Update_User";

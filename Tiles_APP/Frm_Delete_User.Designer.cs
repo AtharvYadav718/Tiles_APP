@@ -41,7 +41,7 @@
             // 
             // gb_ClothType_Details
             // 
-            this.gb_ClothType_Details.BackColor = System.Drawing.Color.BurlyWood;
+            this.gb_ClothType_Details.BackColor = System.Drawing.Color.LightSkyBlue;
             this.gb_ClothType_Details.Controls.Add(this.tb_Admin_Password);
             this.gb_ClothType_Details.Controls.Add(this.lbl_Admin_Password);
             this.gb_ClothType_Details.Controls.Add(this.lbl_Username);
@@ -140,13 +140,13 @@
             // 
             // btn_Delete_User
             // 
-            this.btn_Delete_User.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.btn_Delete_User.Font = new System.Drawing.Font("Cambria", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Delete_User.ForeColor = System.Drawing.Color.Crimson;
+            this.btn_Delete_User.BackColor = System.Drawing.Color.LightSalmon;
+            this.btn_Delete_User.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete_User.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Delete_User.Location = new System.Drawing.Point(499, 606);
             this.btn_Delete_User.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Delete_User.Name = "btn_Delete_User";
-            this.btn_Delete_User.Size = new System.Drawing.Size(281, 58);
+            this.btn_Delete_User.Size = new System.Drawing.Size(281, 63);
             this.btn_Delete_User.TabIndex = 19;
             this.btn_Delete_User.Text = "Delete User";
             this.btn_Delete_User.UseVisualStyleBackColor = false;
