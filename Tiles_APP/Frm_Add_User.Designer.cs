@@ -99,12 +99,12 @@
             // 
             this.lbl_Confirm_Password.AutoSize = true;
             this.lbl_Confirm_Password.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Confirm_Password.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Confirm_Password.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Confirm_Password.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_Confirm_Password.Location = new System.Drawing.Point(267, 369);
+            this.lbl_Confirm_Password.Location = new System.Drawing.Point(288, 380);
             this.lbl_Confirm_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Confirm_Password.Name = "lbl_Confirm_Password";
-            this.lbl_Confirm_Password.Size = new System.Drawing.Size(267, 36);
+            this.lbl_Confirm_Password.Size = new System.Drawing.Size(259, 34);
             this.lbl_Confirm_Password.TabIndex = 22;
             this.lbl_Confirm_Password.Text = "Confirm Password";
             // 
@@ -112,12 +112,12 @@
             // 
             this.lbl_Password.AutoSize = true;
             this.lbl_Password.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Password.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Password.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Password.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_Password.Location = new System.Drawing.Point(266, 266);
+            this.lbl_Password.Location = new System.Drawing.Point(287, 277);
             this.lbl_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(148, 36);
+            this.lbl_Password.Size = new System.Drawing.Size(141, 34);
             this.lbl_Password.TabIndex = 22;
             this.lbl_Password.Text = "Password";
             // 
@@ -125,12 +125,12 @@
             // 
             this.lbl_Username.AutoSize = true;
             this.lbl_Username.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Username.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Username.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Username.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_Username.Location = new System.Drawing.Point(266, 161);
+            this.lbl_Username.Location = new System.Drawing.Point(287, 172);
             this.lbl_Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(156, 36);
+            this.lbl_Username.Size = new System.Drawing.Size(146, 34);
             this.lbl_Username.TabIndex = 21;
             this.lbl_Username.Text = "Username";
             // 
@@ -155,19 +155,19 @@
             // 
             this.lbl_UserRole.AutoSize = true;
             this.lbl_UserRole.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_UserRole.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UserRole.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_UserRole.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.lbl_UserRole.Location = new System.Drawing.Point(266, 60);
+            this.lbl_UserRole.Location = new System.Drawing.Point(287, 71);
             this.lbl_UserRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_UserRole.Name = "lbl_UserRole";
-            this.lbl_UserRole.Size = new System.Drawing.Size(147, 36);
+            this.lbl_UserRole.Size = new System.Drawing.Size(144, 34);
             this.lbl_UserRole.TabIndex = 20;
             this.lbl_UserRole.Text = "User Role";
             // 
             // btn_Save
             // 
             this.btn_Save.BackColor = System.Drawing.Color.LightSalmon;
-            this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.Font = new System.Drawing.Font("Calisto MT", 20F, System.Drawing.FontStyle.Bold);
             this.btn_Save.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Save.Location = new System.Drawing.Point(538, 610);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
@@ -181,7 +181,7 @@
             // btn_Delete_User
             // 
             this.btn_Delete_User.BackColor = System.Drawing.Color.LightSalmon;
-            this.btn_Delete_User.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete_User.Font = new System.Drawing.Font("Calisto MT", 20F, System.Drawing.FontStyle.Bold);
             this.btn_Delete_User.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Delete_User.Location = new System.Drawing.Point(940, 610);
             this.btn_Delete_User.Margin = new System.Windows.Forms.Padding(4);
@@ -195,7 +195,7 @@
             // btn_Update_User
             // 
             this.btn_Update_User.BackColor = System.Drawing.Color.LightSalmon;
-            this.btn_Update_User.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update_User.Font = new System.Drawing.Font("Calisto MT", 20F, System.Drawing.FontStyle.Bold);
             this.btn_Update_User.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Update_User.Location = new System.Drawing.Point(109, 610);
             this.btn_Update_User.Margin = new System.Windows.Forms.Padding(4);

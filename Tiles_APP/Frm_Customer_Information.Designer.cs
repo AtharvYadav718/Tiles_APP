@@ -60,10 +60,10 @@
             // lbl_Customer_Name
             // 
             this.lbl_Customer_Name.AutoSize = true;
-            this.lbl_Customer_Name.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Customer_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Customer_Name.Location = new System.Drawing.Point(34, 223);
             this.lbl_Customer_Name.Name = "lbl_Customer_Name";
-            this.lbl_Customer_Name.Size = new System.Drawing.Size(242, 36);
+            this.lbl_Customer_Name.Size = new System.Drawing.Size(235, 34);
             this.lbl_Customer_Name.TabIndex = 25;
             this.lbl_Customer_Name.Text = "Customer Name ";
             // 
@@ -81,10 +81,10 @@
             // lbl_Customer_ID
             // 
             this.lbl_Customer_ID.AutoSize = true;
-            this.lbl_Customer_ID.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Customer_ID.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Customer_ID.Location = new System.Drawing.Point(71, 116);
             this.lbl_Customer_ID.Name = "lbl_Customer_ID";
-            this.lbl_Customer_ID.Size = new System.Drawing.Size(194, 36);
+            this.lbl_Customer_ID.Size = new System.Drawing.Size(194, 34);
             this.lbl_Customer_ID.TabIndex = 23;
             this.lbl_Customer_ID.Text = "Customer ID ";
             // 
@@ -100,10 +100,10 @@
             // lbl_Date
             // 
             this.lbl_Date.AutoSize = true;
-            this.lbl_Date.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Date.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Date.Location = new System.Drawing.Point(719, 107);
             this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(86, 36);
+            this.lbl_Date.Size = new System.Drawing.Size(87, 34);
             this.lbl_Date.TabIndex = 27;
             this.lbl_Date.Text = "Date ";
             // 
@@ -121,10 +121,10 @@
             // lbl_Aadhar_No
             // 
             this.lbl_Aadhar_No.AutoSize = true;
-            this.lbl_Aadhar_No.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Aadhar_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Aadhar_No.Location = new System.Drawing.Point(94, 341);
             this.lbl_Aadhar_No.Name = "lbl_Aadhar_No";
-            this.lbl_Aadhar_No.Size = new System.Drawing.Size(168, 36);
+            this.lbl_Aadhar_No.Size = new System.Drawing.Size(168, 34);
             this.lbl_Aadhar_No.TabIndex = 29;
             this.lbl_Aadhar_No.Text = "Aadhar No ";
             // 
@@ -142,20 +142,20 @@
             // lbl_Mobile_No
             // 
             this.lbl_Mobile_No.AutoSize = true;
-            this.lbl_Mobile_No.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Mobile_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Mobile_No.Location = new System.Drawing.Point(719, 222);
             this.lbl_Mobile_No.Name = "lbl_Mobile_No";
-            this.lbl_Mobile_No.Size = new System.Drawing.Size(160, 36);
+            this.lbl_Mobile_No.Size = new System.Drawing.Size(163, 34);
             this.lbl_Mobile_No.TabIndex = 33;
             this.lbl_Mobile_No.Text = "Mobile No ";
             // 
             // lbl_Address
             // 
             this.lbl_Address.AutoSize = true;
-            this.lbl_Address.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Address.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Address.Location = new System.Drawing.Point(734, 461);
             this.lbl_Address.Name = "lbl_Address";
-            this.lbl_Address.Size = new System.Drawing.Size(136, 36);
+            this.lbl_Address.Size = new System.Drawing.Size(127, 34);
             this.lbl_Address.TabIndex = 33;
             this.lbl_Address.Text = "Address ";
             // 
@@ -172,10 +172,10 @@
             // lbl_Alt_Mob_No
             // 
             this.lbl_Alt_Mob_No.AutoSize = true;
-            this.lbl_Alt_Mob_No.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Alt_Mob_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Alt_Mob_No.Location = new System.Drawing.Point(700, 334);
             this.lbl_Alt_Mob_No.Name = "lbl_Alt_Mob_No";
-            this.lbl_Alt_Mob_No.Size = new System.Drawing.Size(180, 36);
+            this.lbl_Alt_Mob_No.Size = new System.Drawing.Size(191, 34);
             this.lbl_Alt_Mob_No.TabIndex = 33;
             this.lbl_Alt_Mob_No.Text = "Alt. Mob No ";
             // 
@@ -193,10 +193,10 @@
             // lbl_PAN_No
             // 
             this.lbl_PAN_No.AutoSize = true;
-            this.lbl_PAN_No.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PAN_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_PAN_No.Location = new System.Drawing.Point(122, 464);
             this.lbl_PAN_No.Name = "lbl_PAN_No";
-            this.lbl_PAN_No.Size = new System.Drawing.Size(121, 36);
+            this.lbl_PAN_No.Size = new System.Drawing.Size(137, 34);
             this.lbl_PAN_No.TabIndex = 33;
             this.lbl_PAN_No.Text = "PAN No ";
             // 

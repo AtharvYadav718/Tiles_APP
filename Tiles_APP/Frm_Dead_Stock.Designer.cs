@@ -76,10 +76,10 @@
             // lbl_Purchase_Price
             // 
             this.lbl_Purchase_Price.AutoSize = true;
-            this.lbl_Purchase_Price.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Purchase_Price.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Purchase_Price.Location = new System.Drawing.Point(229, 329);
             this.lbl_Purchase_Price.Name = "lbl_Purchase_Price";
-            this.lbl_Purchase_Price.Size = new System.Drawing.Size(232, 33);
+            this.lbl_Purchase_Price.Size = new System.Drawing.Size(215, 34);
             this.lbl_Purchase_Price.TabIndex = 39;
             this.lbl_Purchase_Price.Text = "Purchase Price ";
             // 
@@ -119,20 +119,20 @@
             // lbl_Quantity
             // 
             this.lbl_Quantity.AutoSize = true;
-            this.lbl_Quantity.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Quantity.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Quantity.Location = new System.Drawing.Point(305, 250);
             this.lbl_Quantity.Name = "lbl_Quantity";
-            this.lbl_Quantity.Size = new System.Drawing.Size(150, 33);
+            this.lbl_Quantity.Size = new System.Drawing.Size(143, 34);
             this.lbl_Quantity.TabIndex = 22;
             this.lbl_Quantity.Text = "Quantity ";
             // 
             // lbl_Product_Name
             // 
             this.lbl_Product_Name.AutoSize = true;
-            this.lbl_Product_Name.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Product_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Product_Name.Location = new System.Drawing.Point(235, 178);
             this.lbl_Product_Name.Name = "lbl_Product_Name";
-            this.lbl_Product_Name.Size = new System.Drawing.Size(214, 33);
+            this.lbl_Product_Name.Size = new System.Drawing.Size(202, 34);
             this.lbl_Product_Name.TabIndex = 14;
             this.lbl_Product_Name.Text = "Product Name";
             // 
@@ -151,10 +151,10 @@
             // lbl_Subcategory_Name
             // 
             this.lbl_Subcategory_Name.AutoSize = true;
-            this.lbl_Subcategory_Name.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Subcategory_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Subcategory_Name.Location = new System.Drawing.Point(184, 114);
             this.lbl_Subcategory_Name.Name = "lbl_Subcategory_Name";
-            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(277, 33);
+            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(260, 34);
             this.lbl_Subcategory_Name.TabIndex = 12;
             this.lbl_Subcategory_Name.Text = "Subcategory Name";
             // 
@@ -173,10 +173,10 @@
             // lbl_Category_Name
             // 
             this.lbl_Category_Name.AutoSize = true;
-            this.lbl_Category_Name.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Category_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Category_Name.Location = new System.Drawing.Point(224, 55);
             this.lbl_Category_Name.Name = "lbl_Category_Name";
-            this.lbl_Category_Name.Size = new System.Drawing.Size(231, 33);
+            this.lbl_Category_Name.Size = new System.Drawing.Size(220, 34);
             this.lbl_Category_Name.TabIndex = 10;
             this.lbl_Category_Name.Text = "Category Name";
             // 
@@ -232,16 +232,16 @@
             // lbl_Total_Amount
             // 
             this.lbl_Total_Amount.AutoSize = true;
-            this.lbl_Total_Amount.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Total_Amount.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Total_Amount.Location = new System.Drawing.Point(244, 399);
             this.lbl_Total_Amount.Name = "lbl_Total_Amount";
-            this.lbl_Total_Amount.Size = new System.Drawing.Size(217, 33);
+            this.lbl_Total_Amount.Size = new System.Drawing.Size(205, 34);
             this.lbl_Total_Amount.TabIndex = 35;
             this.lbl_Total_Amount.Text = "Total Amount ";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Moccasin;
+            this.panel1.BackColor = System.Drawing.Color.SkyBlue;
             this.panel1.Controls.Add(this.Cmb_Category_Name);
             this.panel1.Controls.Add(this.tb_Total_Amount);
             this.panel1.Controls.Add(this.tb_Purchase_Price);

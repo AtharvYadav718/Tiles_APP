@@ -50,10 +50,10 @@
             // lbl_Category_ID
             // 
             this.lbl_Category_ID.AutoSize = true;
-            this.lbl_Category_ID.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Category_ID.Location = new System.Drawing.Point(315, 177);
+            this.lbl_Category_ID.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Category_ID.Location = new System.Drawing.Point(347, 190);
             this.lbl_Category_ID.Name = "lbl_Category_ID";
-            this.lbl_Category_ID.Size = new System.Drawing.Size(221, 42);
+            this.lbl_Category_ID.Size = new System.Drawing.Size(187, 34);
             this.lbl_Category_ID.TabIndex = 22;
             this.lbl_Category_ID.Text = "Category ID ";
             // 
@@ -70,18 +70,18 @@
             // lbl_Category_Name
             // 
             this.lbl_Category_Name.AutoSize = true;
-            this.lbl_Category_Name.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Category_Name.Location = new System.Drawing.Point(264, 290);
+            this.lbl_Category_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Category_Name.Location = new System.Drawing.Point(296, 303);
             this.lbl_Category_Name.Name = "lbl_Category_Name";
-            this.lbl_Category_Name.Size = new System.Drawing.Size(272, 42);
+            this.lbl_Category_Name.Size = new System.Drawing.Size(228, 34);
             this.lbl_Category_Name.TabIndex = 23;
             this.lbl_Category_Name.Text = "Category Name ";
             // 
             // btn_Save
             // 
             this.btn_Save.BackColor = System.Drawing.Color.LightSalmon;
-            this.btn_Save.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(386, 438);
+            this.btn_Save.Font = new System.Drawing.Font("Calisto MT", 20F, System.Drawing.FontStyle.Bold);
+            this.btn_Save.Location = new System.Drawing.Point(333, 444);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(175, 68);
@@ -93,8 +93,8 @@
             // btn_Add_New_Subcategory
             // 
             this.btn_Add_New_Subcategory.BackColor = System.Drawing.Color.LightSalmon;
-            this.btn_Add_New_Subcategory.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add_New_Subcategory.Location = new System.Drawing.Point(619, 438);
+            this.btn_Add_New_Subcategory.Font = new System.Drawing.Font("Calisto MT", 20F, System.Drawing.FontStyle.Bold);
+            this.btn_Add_New_Subcategory.Location = new System.Drawing.Point(566, 444);
             this.btn_Add_New_Subcategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Add_New_Subcategory.Name = "btn_Add_New_Subcategory";
             this.btn_Add_New_Subcategory.Size = new System.Drawing.Size(397, 68);

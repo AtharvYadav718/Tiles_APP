@@ -73,12 +73,12 @@
             // 
             this.lbl_Admin_Password.AutoSize = true;
             this.lbl_Admin_Password.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Admin_Password.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Admin_Password.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Admin_Password.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbl_Admin_Password.Location = new System.Drawing.Point(264, 323);
             this.lbl_Admin_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Admin_Password.Name = "lbl_Admin_Password";
-            this.lbl_Admin_Password.Size = new System.Drawing.Size(247, 36);
+            this.lbl_Admin_Password.Size = new System.Drawing.Size(238, 34);
             this.lbl_Admin_Password.TabIndex = 22;
             this.lbl_Admin_Password.Text = "Admin Password";
             // 
@@ -86,12 +86,12 @@
             // 
             this.lbl_Username.AutoSize = true;
             this.lbl_Username.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Username.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Username.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Username.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbl_Username.Location = new System.Drawing.Point(264, 212);
             this.lbl_Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(156, 36);
+            this.lbl_Username.Size = new System.Drawing.Size(146, 34);
             this.lbl_Username.TabIndex = 21;
             this.lbl_Username.Text = "Username";
             // 
@@ -129,12 +129,12 @@
             // 
             this.lbl_UserRole.AutoSize = true;
             this.lbl_UserRole.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_UserRole.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UserRole.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_UserRole.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbl_UserRole.Location = new System.Drawing.Point(264, 109);
             this.lbl_UserRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_UserRole.Name = "lbl_UserRole";
-            this.lbl_UserRole.Size = new System.Drawing.Size(147, 36);
+            this.lbl_UserRole.Size = new System.Drawing.Size(144, 34);
             this.lbl_UserRole.TabIndex = 20;
             this.lbl_UserRole.Text = "User Role";
             // 

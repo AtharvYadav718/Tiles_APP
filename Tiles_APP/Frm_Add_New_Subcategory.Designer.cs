@@ -40,10 +40,10 @@
             // lbl_Subcategory_Name
             // 
             this.lbl_Subcategory_Name.AutoSize = true;
-            this.lbl_Subcategory_Name.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Subcategory_Name.Location = new System.Drawing.Point(289, 371);
+            this.lbl_Subcategory_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Subcategory_Name.Location = new System.Drawing.Point(307, 379);
             this.lbl_Subcategory_Name.Name = "lbl_Subcategory_Name";
-            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(291, 37);
+            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(268, 34);
             this.lbl_Subcategory_Name.TabIndex = 16;
             this.lbl_Subcategory_Name.Text = "Subcategory Name ";
             // 
@@ -61,10 +61,10 @@
             // lbl_Category_Name
             // 
             this.lbl_Category_Name.AutoSize = true;
-            this.lbl_Category_Name.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Category_Name.Location = new System.Drawing.Point(334, 139);
+            this.lbl_Category_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Category_Name.Location = new System.Drawing.Point(352, 147);
             this.lbl_Category_Name.Name = "lbl_Category_Name";
-            this.lbl_Category_Name.Size = new System.Drawing.Size(246, 37);
+            this.lbl_Category_Name.Size = new System.Drawing.Size(228, 34);
             this.lbl_Category_Name.TabIndex = 14;
             this.lbl_Category_Name.Text = "Category Name ";
             // 
@@ -80,10 +80,10 @@
             // lbl_Subcategory_ID
             // 
             this.lbl_Subcategory_ID.AutoSize = true;
-            this.lbl_Subcategory_ID.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Subcategory_ID.Location = new System.Drawing.Point(334, 251);
+            this.lbl_Subcategory_ID.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Subcategory_ID.Location = new System.Drawing.Point(352, 259);
             this.lbl_Subcategory_ID.Name = "lbl_Subcategory_ID";
-            this.lbl_Subcategory_ID.Size = new System.Drawing.Size(246, 37);
+            this.lbl_Subcategory_ID.Size = new System.Drawing.Size(227, 34);
             this.lbl_Subcategory_ID.TabIndex = 16;
             this.lbl_Subcategory_ID.Text = "Subcategory ID ";
             // 

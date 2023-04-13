@@ -78,10 +78,10 @@
             // lbl_Alt_Mob_No
             // 
             this.lbl_Alt_Mob_No.AutoSize = true;
-            this.lbl_Alt_Mob_No.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Alt_Mob_No.Location = new System.Drawing.Point(709, 166);
+            this.lbl_Alt_Mob_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Alt_Mob_No.Location = new System.Drawing.Point(690, 167);
             this.lbl_Alt_Mob_No.Name = "lbl_Alt_Mob_No";
-            this.lbl_Alt_Mob_No.Size = new System.Drawing.Size(175, 35);
+            this.lbl_Alt_Mob_No.Size = new System.Drawing.Size(185, 34);
             this.lbl_Alt_Mob_No.TabIndex = 48;
             this.lbl_Alt_Mob_No.Text = "Alt.Mob.No ";
             // 
@@ -98,10 +98,10 @@
             // lbl_PAN_No
             // 
             this.lbl_PAN_No.AutoSize = true;
-            this.lbl_PAN_No.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_PAN_No.Location = new System.Drawing.Point(756, 361);
+            this.lbl_PAN_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_PAN_No.Location = new System.Drawing.Point(737, 362);
             this.lbl_PAN_No.Name = "lbl_PAN_No";
-            this.lbl_PAN_No.Size = new System.Drawing.Size(128, 35);
+            this.lbl_PAN_No.Size = new System.Drawing.Size(137, 34);
             this.lbl_PAN_No.TabIndex = 47;
             this.lbl_PAN_No.Text = "PAN No ";
             // 
@@ -117,10 +117,10 @@
             // lbl_Address
             // 
             this.lbl_Address.AutoSize = true;
-            this.lbl_Address.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Address.Location = new System.Drawing.Point(758, 256);
+            this.lbl_Address.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Address.Location = new System.Drawing.Point(739, 257);
             this.lbl_Address.Name = "lbl_Address";
-            this.lbl_Address.Size = new System.Drawing.Size(126, 35);
+            this.lbl_Address.Size = new System.Drawing.Size(127, 34);
             this.lbl_Address.TabIndex = 46;
             this.lbl_Address.Text = "Address ";
             // 
@@ -138,10 +138,10 @@
             // lbl_Mobile_No
             // 
             this.lbl_Mobile_No.AutoSize = true;
-            this.lbl_Mobile_No.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Mobile_No.Location = new System.Drawing.Point(726, 76);
+            this.lbl_Mobile_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Mobile_No.Location = new System.Drawing.Point(707, 77);
             this.lbl_Mobile_No.Name = "lbl_Mobile_No";
-            this.lbl_Mobile_No.Size = new System.Drawing.Size(157, 35);
+            this.lbl_Mobile_No.Size = new System.Drawing.Size(163, 34);
             this.lbl_Mobile_No.TabIndex = 49;
             this.lbl_Mobile_No.Text = "Mobile No ";
             // 
@@ -157,10 +157,10 @@
             // lbl_Email_ID
             // 
             this.lbl_Email_ID.AutoSize = true;
-            this.lbl_Email_ID.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Email_ID.Location = new System.Drawing.Point(91, 461);
+            this.lbl_Email_ID.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Email_ID.Location = new System.Drawing.Point(92, 467);
             this.lbl_Email_ID.Name = "lbl_Email_ID";
-            this.lbl_Email_ID.Size = new System.Drawing.Size(153, 35);
+            this.lbl_Email_ID.Size = new System.Drawing.Size(159, 34);
             this.lbl_Email_ID.TabIndex = 44;
             this.lbl_Email_ID.Text = "E-Mail ID ";
             // 
@@ -178,10 +178,10 @@
             // lbl_Aadhar_No
             // 
             this.lbl_Aadhar_No.AutoSize = true;
-            this.lbl_Aadhar_No.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Aadhar_No.Location = new System.Drawing.Point(83, 368);
+            this.lbl_Aadhar_No.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Aadhar_No.Location = new System.Drawing.Point(84, 374);
             this.lbl_Aadhar_No.Name = "lbl_Aadhar_No";
-            this.lbl_Aadhar_No.Size = new System.Drawing.Size(161, 35);
+            this.lbl_Aadhar_No.Size = new System.Drawing.Size(168, 34);
             this.lbl_Aadhar_No.TabIndex = 42;
             this.lbl_Aadhar_No.Text = "Aadhar No ";
             // 
@@ -197,10 +197,10 @@
             // lbl_Tie_Up_Date
             // 
             this.lbl_Tie_Up_Date.AutoSize = true;
-            this.lbl_Tie_Up_Date.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Tie_Up_Date.Location = new System.Drawing.Point(61, 265);
+            this.lbl_Tie_Up_Date.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Tie_Up_Date.Location = new System.Drawing.Point(62, 271);
             this.lbl_Tie_Up_Date.Name = "lbl_Tie_Up_Date";
-            this.lbl_Tie_Up_Date.Size = new System.Drawing.Size(184, 35);
+            this.lbl_Tie_Up_Date.Size = new System.Drawing.Size(192, 34);
             this.lbl_Tie_Up_Date.TabIndex = 40;
             this.lbl_Tie_Up_Date.Text = " Tie Up Date ";
             // 
@@ -217,10 +217,10 @@
             // lbl_Supplier_Name
             // 
             this.lbl_Supplier_Name.AutoSize = true;
-            this.lbl_Supplier_Name.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Supplier_Name.Location = new System.Drawing.Point(37, 162);
+            this.lbl_Supplier_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Supplier_Name.Location = new System.Drawing.Point(38, 168);
             this.lbl_Supplier_Name.Name = "lbl_Supplier_Name";
-            this.lbl_Supplier_Name.Size = new System.Drawing.Size(211, 35);
+            this.lbl_Supplier_Name.Size = new System.Drawing.Size(216, 34);
             this.lbl_Supplier_Name.TabIndex = 38;
             this.lbl_Supplier_Name.Text = "Supplier Name ";
             // 
@@ -238,20 +238,20 @@
             // lbl_Supplier_ID
             // 
             this.lbl_Supplier_ID.AutoSize = true;
-            this.lbl_Supplier_ID.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Supplier_ID.Location = new System.Drawing.Point(73, 72);
+            this.lbl_Supplier_ID.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Supplier_ID.Location = new System.Drawing.Point(74, 78);
             this.lbl_Supplier_ID.Name = "lbl_Supplier_ID";
-            this.lbl_Supplier_ID.Size = new System.Drawing.Size(172, 35);
+            this.lbl_Supplier_ID.Size = new System.Drawing.Size(175, 34);
             this.lbl_Supplier_ID.TabIndex = 36;
             this.lbl_Supplier_ID.Text = "Supplier ID ";
             // 
             // lbl_Note
             // 
             this.lbl_Note.AutoSize = true;
-            this.lbl_Note.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Note.Location = new System.Drawing.Point(801, 460);
+            this.lbl_Note.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Note.Location = new System.Drawing.Point(782, 461);
             this.lbl_Note.Name = "lbl_Note";
-            this.lbl_Note.Size = new System.Drawing.Size(83, 35);
+            this.lbl_Note.Size = new System.Drawing.Size(87, 34);
             this.lbl_Note.TabIndex = 55;
             this.lbl_Note.Text = "Note ";
             // 
