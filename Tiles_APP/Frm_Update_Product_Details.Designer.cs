@@ -73,20 +73,20 @@
             // lbl_Category_Name
             // 
             this.lbl_Category_Name.AutoSize = true;
-            this.lbl_Category_Name.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Category_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Category_Name.Location = new System.Drawing.Point(233, 70);
             this.lbl_Category_Name.Name = "lbl_Category_Name";
-            this.lbl_Category_Name.Size = new System.Drawing.Size(219, 35);
+            this.lbl_Category_Name.Size = new System.Drawing.Size(228, 34);
             this.lbl_Category_Name.TabIndex = 84;
             this.lbl_Category_Name.Text = "Category Name ";
             // 
             // lbl_Purchase_Rate
             // 
             this.lbl_Purchase_Rate.AutoSize = true;
-            this.lbl_Purchase_Rate.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Purchase_Rate.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Purchase_Rate.Location = new System.Drawing.Point(241, 294);
             this.lbl_Purchase_Rate.Name = "lbl_Purchase_Rate";
-            this.lbl_Purchase_Rate.Size = new System.Drawing.Size(204, 35);
+            this.lbl_Purchase_Rate.Size = new System.Drawing.Size(210, 34);
             this.lbl_Purchase_Rate.TabIndex = 90;
             this.lbl_Purchase_Rate.Text = "Purchase Rate ";
             // 
@@ -102,10 +102,10 @@
             // lbl_Sales_Rate
             // 
             this.lbl_Sales_Rate.AutoSize = true;
-            this.lbl_Sales_Rate.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Sales_Rate.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Sales_Rate.Location = new System.Drawing.Point(281, 366);
             this.lbl_Sales_Rate.Name = "lbl_Sales_Rate";
-            this.lbl_Sales_Rate.Size = new System.Drawing.Size(154, 35);
+            this.lbl_Sales_Rate.Size = new System.Drawing.Size(158, 34);
             this.lbl_Sales_Rate.TabIndex = 89;
             this.lbl_Sales_Rate.Text = "Sales Rate ";
             // 
@@ -121,20 +121,20 @@
             // lbl_Product_Name
             // 
             this.lbl_Product_Name.AutoSize = true;
-            this.lbl_Product_Name.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Product_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Product_Name.Location = new System.Drawing.Point(241, 217);
             this.lbl_Product_Name.Name = "lbl_Product_Name";
-            this.lbl_Product_Name.Size = new System.Drawing.Size(205, 35);
+            this.lbl_Product_Name.Size = new System.Drawing.Size(210, 34);
             this.lbl_Product_Name.TabIndex = 86;
             this.lbl_Product_Name.Text = "Product Name ";
             // 
             // lbl_Subcategory_Name
             // 
             this.lbl_Subcategory_Name.AutoSize = true;
-            this.lbl_Subcategory_Name.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Subcategory_Name.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Subcategory_Name.Location = new System.Drawing.Point(186, 134);
             this.lbl_Subcategory_Name.Name = "lbl_Subcategory_Name";
-            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(260, 35);
+            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(268, 34);
             this.lbl_Subcategory_Name.TabIndex = 83;
             this.lbl_Subcategory_Name.Text = "Subcategory Name ";
             // 

@@ -69,30 +69,30 @@
             // lbl_User_Role
             // 
             this.lbl_User_Role.AutoSize = true;
-            this.lbl_User_Role.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_User_Role.Location = new System.Drawing.Point(714, 222);
+            this.lbl_User_Role.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_User_Role.Location = new System.Drawing.Point(722, 228);
             this.lbl_User_Role.Name = "lbl_User_Role";
-            this.lbl_User_Role.Size = new System.Drawing.Size(156, 37);
+            this.lbl_User_Role.Size = new System.Drawing.Size(144, 34);
             this.lbl_User_Role.TabIndex = 2;
             this.lbl_User_Role.Text = "User Role";
             // 
             // lbl_Username
             // 
             this.lbl_Username.AutoSize = true;
-            this.lbl_Username.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Username.Location = new System.Drawing.Point(712, 348);
+            this.lbl_Username.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Username.Location = new System.Drawing.Point(720, 354);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(160, 37);
+            this.lbl_Username.Size = new System.Drawing.Size(146, 34);
             this.lbl_Username.TabIndex = 2;
             this.lbl_Username.Text = "Username";
             // 
             // lbl_Password
             // 
             this.lbl_Password.AutoSize = true;
-            this.lbl_Password.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Password.Location = new System.Drawing.Point(715, 479);
+            this.lbl_Password.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
+            this.lbl_Password.Location = new System.Drawing.Point(723, 485);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(151, 37);
+            this.lbl_Password.Size = new System.Drawing.Size(141, 34);
             this.lbl_Password.TabIndex = 2;
             this.lbl_Password.Text = "Password";
             // 
