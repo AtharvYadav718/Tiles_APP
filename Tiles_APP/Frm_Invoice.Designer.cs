@@ -125,7 +125,7 @@
             this.lbl_Sales_Price.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Sales_Price.Location = new System.Drawing.Point(841, 91);
             this.lbl_Sales_Price.Name = "lbl_Sales_Price";
-            this.lbl_Sales_Price.Size = new System.Drawing.Size(120, 25);
+            this.lbl_Sales_Price.Size = new System.Drawing.Size(125, 26);
             this.lbl_Sales_Price.TabIndex = 54;
             this.lbl_Sales_Price.Text = "Sales Price";
             // 
@@ -157,7 +157,7 @@
             this.lbl_Total.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Total.Location = new System.Drawing.Point(1074, 91);
             this.lbl_Total.Name = "lbl_Total";
-            this.lbl_Total.Size = new System.Drawing.Size(62, 25);
+            this.lbl_Total.Size = new System.Drawing.Size(64, 26);
             this.lbl_Total.TabIndex = 24;
             this.lbl_Total.Text = "Total";
             // 
@@ -178,7 +178,7 @@
             this.lbl_Quantity.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Quantity.Location = new System.Drawing.Point(442, 91);
             this.lbl_Quantity.Name = "lbl_Quantity";
-            this.lbl_Quantity.Size = new System.Drawing.Size(106, 25);
+            this.lbl_Quantity.Size = new System.Drawing.Size(110, 26);
             this.lbl_Quantity.TabIndex = 22;
             this.lbl_Quantity.Text = "Quantity ";
             // 
@@ -198,7 +198,7 @@
             this.lbl_Unit.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Unit.Location = new System.Drawing.Point(658, 94);
             this.lbl_Unit.Name = "lbl_Unit";
-            this.lbl_Unit.Size = new System.Drawing.Size(61, 25);
+            this.lbl_Unit.Size = new System.Drawing.Size(63, 26);
             this.lbl_Unit.TabIndex = 20;
             this.lbl_Unit.Text = "Unit ";
             // 
@@ -226,6 +226,7 @@
             this.btn_All_Rate.TabIndex = 18;
             this.btn_All_Rate.Text = "All Rate";
             this.btn_All_Rate.UseVisualStyleBackColor = false;
+            this.btn_All_Rate.Click += new System.EventHandler(this.btn_All_Rate_Click);
             // 
             // lbl_Product_Name
             // 
@@ -233,7 +234,7 @@
             this.lbl_Product_Name.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Product_Name.Location = new System.Drawing.Point(8, 88);
             this.lbl_Product_Name.Name = "lbl_Product_Name";
-            this.lbl_Product_Name.Size = new System.Drawing.Size(159, 25);
+            this.lbl_Product_Name.Size = new System.Drawing.Size(160, 26);
             this.lbl_Product_Name.TabIndex = 14;
             this.lbl_Product_Name.Text = "Product Name";
             // 
@@ -255,7 +256,7 @@
             this.lbl_Subcategory_Name.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Subcategory_Name.Location = new System.Drawing.Point(460, 36);
             this.lbl_Subcategory_Name.Name = "lbl_Subcategory_Name";
-            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(203, 25);
+            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(205, 26);
             this.lbl_Subcategory_Name.TabIndex = 12;
             this.lbl_Subcategory_Name.Text = "Subcategory Name";
             // 
@@ -277,7 +278,7 @@
             this.lbl_Category_Name.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Category_Name.Location = new System.Drawing.Point(5, 36);
             this.lbl_Category_Name.Name = "lbl_Category_Name";
-            this.lbl_Category_Name.Size = new System.Drawing.Size(170, 25);
+            this.lbl_Category_Name.Size = new System.Drawing.Size(172, 26);
             this.lbl_Category_Name.TabIndex = 10;
             this.lbl_Category_Name.Text = "Category Name";
             // 
@@ -297,7 +298,7 @@
             this.lbl_Customer_Name.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Customer_Name.Location = new System.Drawing.Point(527, 18);
             this.lbl_Customer_Name.Name = "lbl_Customer_Name";
-            this.lbl_Customer_Name.Size = new System.Drawing.Size(182, 25);
+            this.lbl_Customer_Name.Size = new System.Drawing.Size(183, 26);
             this.lbl_Customer_Name.TabIndex = 26;
             this.lbl_Customer_Name.Text = " Customer Name";
             // 
@@ -317,7 +318,7 @@
             this.lbl_Date.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Date.Location = new System.Drawing.Point(1030, 18);
             this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(66, 25);
+            this.lbl_Date.Size = new System.Drawing.Size(66, 26);
             this.lbl_Date.TabIndex = 24;
             this.lbl_Date.Text = "Date ";
             // 
@@ -337,7 +338,7 @@
             this.lbl_Invoice_No.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Invoice_No.Location = new System.Drawing.Point(5, 18);
             this.lbl_Invoice_No.Name = "lbl_Invoice_No";
-            this.lbl_Invoice_No.Size = new System.Drawing.Size(125, 25);
+            this.lbl_Invoice_No.Size = new System.Drawing.Size(127, 26);
             this.lbl_Invoice_No.TabIndex = 22;
             this.lbl_Invoice_No.Text = "Invoice No ";
             // 
@@ -358,7 +359,7 @@
             this.lbl_Customer_ID.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Customer_ID.Location = new System.Drawing.Point(257, 18);
             this.lbl_Customer_ID.Name = "lbl_Customer_ID";
-            this.lbl_Customer_ID.Size = new System.Drawing.Size(149, 25);
+            this.lbl_Customer_ID.Size = new System.Drawing.Size(150, 26);
             this.lbl_Customer_ID.TabIndex = 29;
             this.lbl_Customer_ID.Text = "Customer ID ";
             // 
@@ -484,7 +485,7 @@
             this.lbl_Payment_Mode.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Payment_Mode.Location = new System.Drawing.Point(833, 589);
             this.lbl_Payment_Mode.Name = "lbl_Payment_Mode";
-            this.lbl_Payment_Mode.Size = new System.Drawing.Size(172, 25);
+            this.lbl_Payment_Mode.Size = new System.Drawing.Size(173, 26);
             this.lbl_Payment_Mode.TabIndex = 49;
             this.lbl_Payment_Mode.Text = "Payment Mode ";
             // 
@@ -505,7 +506,7 @@
             this.lbl_Balance_Amount.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Balance_Amount.Location = new System.Drawing.Point(393, 583);
             this.lbl_Balance_Amount.Name = "lbl_Balance_Amount";
-            this.lbl_Balance_Amount.Size = new System.Drawing.Size(184, 25);
+            this.lbl_Balance_Amount.Size = new System.Drawing.Size(187, 26);
             this.lbl_Balance_Amount.TabIndex = 47;
             this.lbl_Balance_Amount.Text = "Balance Amount ";
             // 
@@ -526,7 +527,7 @@
             this.lbl_Total_Amount.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Total_Amount.Location = new System.Drawing.Point(851, 518);
             this.lbl_Total_Amount.Name = "lbl_Total_Amount";
-            this.lbl_Total_Amount.Size = new System.Drawing.Size(154, 25);
+            this.lbl_Total_Amount.Size = new System.Drawing.Size(157, 26);
             this.lbl_Total_Amount.TabIndex = 39;
             this.lbl_Total_Amount.Text = "Total Amount ";
             // 
@@ -548,7 +549,7 @@
             this.lbl_GST.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_GST.Location = new System.Drawing.Point(509, 522);
             this.lbl_GST.Name = "lbl_GST";
-            this.lbl_GST.Size = new System.Drawing.Size(64, 25);
+            this.lbl_GST.Size = new System.Drawing.Size(64, 26);
             this.lbl_GST.TabIndex = 40;
             this.lbl_GST.Text = "GST ";
             // 
@@ -570,7 +571,7 @@
             this.lbl_Paid_Amount.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Paid_Amount.Location = new System.Drawing.Point(27, 583);
             this.lbl_Paid_Amount.Name = "lbl_Paid_Amount";
-            this.lbl_Paid_Amount.Size = new System.Drawing.Size(149, 25);
+            this.lbl_Paid_Amount.Size = new System.Drawing.Size(152, 26);
             this.lbl_Paid_Amount.TabIndex = 41;
             this.lbl_Paid_Amount.Text = "Paid Amount ";
             // 
@@ -592,7 +593,7 @@
             this.lbl_Discount.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Discount.Location = new System.Drawing.Point(85, 518);
             this.lbl_Discount.Name = "lbl_Discount";
-            this.lbl_Discount.Size = new System.Drawing.Size(106, 25);
+            this.lbl_Discount.Size = new System.Drawing.Size(108, 26);
             this.lbl_Discount.TabIndex = 42;
             this.lbl_Discount.Text = "Discount ";
             // 

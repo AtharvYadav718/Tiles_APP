@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Menu_Form));
             this.pnl_Sidemenu = new System.Windows.Forms.Panel();
+            this.pnl_User_Master_Submenu = new System.Windows.Forms.Panel();
+            this.btn_Add_User = new System.Windows.Forms.Button();
+            this.btn_User_Master = new System.Windows.Forms.Button();
             this.pnl_Reports_Submenu = new System.Windows.Forms.Panel();
             this.btn_Datewise_Report = new System.Windows.Forms.Button();
             this.btn_Supplier_Entry = new System.Windows.Forms.Button();
@@ -61,10 +64,8 @@
             this.lbl_Head = new System.Windows.Forms.Label();
             pnl_ChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_User_Master = new System.Windows.Forms.Button();
-            this.pnl_User_Master_Submenu = new System.Windows.Forms.Panel();
-            this.btn_Add_User = new System.Windows.Forms.Button();
             this.pnl_Sidemenu.SuspendLayout();
+            this.pnl_User_Master_Submenu.SuspendLayout();
             this.pnl_Reports_Submenu.SuspendLayout();
             this.pnl_Stock_Submenu.SuspendLayout();
             this.pnl_Sale_Submenu.SuspendLayout();
@@ -75,7 +76,6 @@
             this.pnl_Head.SuspendLayout();
             pnl_ChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnl_User_Master_Submenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Sidemenu
@@ -100,6 +100,51 @@
             this.pnl_Sidemenu.Name = "pnl_Sidemenu";
             this.pnl_Sidemenu.Size = new System.Drawing.Size(267, 1055);
             this.pnl_Sidemenu.TabIndex = 0;
+            // 
+            // pnl_User_Master_Submenu
+            // 
+            this.pnl_User_Master_Submenu.BackColor = System.Drawing.Color.LightYellow;
+            this.pnl_User_Master_Submenu.Controls.Add(this.btn_Add_User);
+            this.pnl_User_Master_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_User_Master_Submenu.Location = new System.Drawing.Point(0, 1030);
+            this.pnl_User_Master_Submenu.Name = "pnl_User_Master_Submenu";
+            this.pnl_User_Master_Submenu.Size = new System.Drawing.Size(267, 39);
+            this.pnl_User_Master_Submenu.TabIndex = 12;
+            // 
+            // btn_Add_User
+            // 
+            this.btn_Add_User.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Add_User.FlatAppearance.BorderSize = 0;
+            this.btn_Add_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Add_User.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add_User.Location = new System.Drawing.Point(0, 0);
+            this.btn_Add_User.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Add_User.Name = "btn_Add_User";
+            this.btn_Add_User.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_Add_User.Size = new System.Drawing.Size(267, 39);
+            this.btn_Add_User.TabIndex = 1;
+            this.btn_Add_User.Text = "Add User";
+            this.btn_Add_User.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Add_User.UseVisualStyleBackColor = true;
+            this.btn_Add_User.Click += new System.EventHandler(this.btn_Add_User_Click);
+            // 
+            // btn_User_Master
+            // 
+            this.btn_User_Master.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_User_Master.FlatAppearance.BorderSize = 0;
+            this.btn_User_Master.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_User_Master.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_User_Master.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.btn_User_Master.Location = new System.Drawing.Point(0, 984);
+            this.btn_User_Master.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_User_Master.Name = "btn_User_Master";
+            this.btn_User_Master.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_User_Master.Size = new System.Drawing.Size(267, 46);
+            this.btn_User_Master.TabIndex = 11;
+            this.btn_User_Master.Text = "User Master";
+            this.btn_User_Master.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_User_Master.UseVisualStyleBackColor = true;
+            this.btn_User_Master.Click += new System.EventHandler(this.btn_User_Master_Click);
             // 
             // pnl_Reports_Submenu
             // 
@@ -532,6 +577,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pnl_Head
             // 
@@ -577,51 +623,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_User_Master
-            // 
-            this.btn_User_Master.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_User_Master.FlatAppearance.BorderSize = 0;
-            this.btn_User_Master.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_User_Master.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_User_Master.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.btn_User_Master.Location = new System.Drawing.Point(0, 984);
-            this.btn_User_Master.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_User_Master.Name = "btn_User_Master";
-            this.btn_User_Master.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_User_Master.Size = new System.Drawing.Size(267, 46);
-            this.btn_User_Master.TabIndex = 11;
-            this.btn_User_Master.Text = "User Master";
-            this.btn_User_Master.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_User_Master.UseVisualStyleBackColor = true;
-            this.btn_User_Master.Click += new System.EventHandler(this.btn_User_Master_Click);
-            // 
-            // pnl_User_Master_Submenu
-            // 
-            this.pnl_User_Master_Submenu.BackColor = System.Drawing.Color.LightYellow;
-            this.pnl_User_Master_Submenu.Controls.Add(this.btn_Add_User);
-            this.pnl_User_Master_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_User_Master_Submenu.Location = new System.Drawing.Point(0, 1030);
-            this.pnl_User_Master_Submenu.Name = "pnl_User_Master_Submenu";
-            this.pnl_User_Master_Submenu.Size = new System.Drawing.Size(267, 39);
-            this.pnl_User_Master_Submenu.TabIndex = 12;
-            // 
-            // btn_Add_User
-            // 
-            this.btn_Add_User.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Add_User.FlatAppearance.BorderSize = 0;
-            this.btn_Add_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Add_User.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add_User.Location = new System.Drawing.Point(0, 0);
-            this.btn_Add_User.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Add_User.Name = "btn_Add_User";
-            this.btn_Add_User.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_Add_User.Size = new System.Drawing.Size(267, 39);
-            this.btn_Add_User.TabIndex = 1;
-            this.btn_Add_User.Text = "Add User";
-            this.btn_Add_User.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Add_User.UseVisualStyleBackColor = true;
-            this.btn_Add_User.Click += new System.EventHandler(this.btn_Add_User_Click);
-            // 
             // Frm_Menu_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -637,6 +638,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Form";
             this.pnl_Sidemenu.ResumeLayout(false);
+            this.pnl_User_Master_Submenu.ResumeLayout(false);
             this.pnl_Reports_Submenu.ResumeLayout(false);
             this.pnl_Stock_Submenu.ResumeLayout(false);
             this.pnl_Sale_Submenu.ResumeLayout(false);
@@ -648,7 +650,6 @@
             this.pnl_Head.PerformLayout();
             pnl_ChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnl_User_Master_Submenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -687,8 +688,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_Category_Details;
         private System.Windows.Forms.Button btn_User_Master;
-        public static System.Windows.Forms.Panel pnl_ChildForm;
         private System.Windows.Forms.Panel pnl_User_Master_Submenu;
         private System.Windows.Forms.Button btn_Add_User;
+        public static System.Windows.Forms.Panel pnl_ChildForm;
     }
 }

@@ -211,6 +211,21 @@ namespace Tiles_APP
             childForm.BringToFront();
             childForm.Show();
 
-        }       
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            DialogResult Res = MessageBox.Show("Are You Sure Do You Want to LogOut???", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if (Res == DialogResult.OK)
+            {
+                Frm_Tiles_APP_Login Obj = new Frm_Tiles_APP_Login();
+                Obj.Show();
+                this.Hide();
+            }
+
+
+
+        }
     }
 }

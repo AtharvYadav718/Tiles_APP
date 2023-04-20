@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_Product_List = new System.Windows.Forms.DataGridView();
             this.pnl_Peoduct_List = new System.Windows.Forms.Panel();
             this.btn_Refresh = new System.Windows.Forms.Button();
@@ -47,14 +47,14 @@
             this.dgv_Product_List.AllowUserToAddRows = false;
             this.dgv_Product_List.AllowUserToDeleteRows = false;
             this.dgv_Product_List.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Product_List.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Product_List.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Product_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Product_List.Location = new System.Drawing.Point(12, 177);
             this.dgv_Product_List.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -99,7 +99,7 @@
             this.lbl_Product_Name.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Product_Name.Location = new System.Drawing.Point(27, 83);
             this.lbl_Product_Name.Name = "lbl_Product_Name";
-            this.lbl_Product_Name.Size = new System.Drawing.Size(159, 25);
+            this.lbl_Product_Name.Size = new System.Drawing.Size(160, 26);
             this.lbl_Product_Name.TabIndex = 33;
             this.lbl_Product_Name.Text = "Product Name";
             // 
@@ -109,7 +109,7 @@
             this.lbl_Subcategory_Name.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Subcategory_Name.Location = new System.Drawing.Point(592, 26);
             this.lbl_Subcategory_Name.Name = "lbl_Subcategory_Name";
-            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(203, 25);
+            this.lbl_Subcategory_Name.Size = new System.Drawing.Size(205, 26);
             this.lbl_Subcategory_Name.TabIndex = 32;
             this.lbl_Subcategory_Name.Text = "Subcategory Name";
             // 
@@ -119,7 +119,7 @@
             this.Category_Name.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Category_Name.Location = new System.Drawing.Point(27, 25);
             this.Category_Name.Name = "Category_Name";
-            this.Category_Name.Size = new System.Drawing.Size(170, 25);
+            this.Category_Name.Size = new System.Drawing.Size(172, 26);
             this.Category_Name.TabIndex = 31;
             this.Category_Name.Text = "Category Name";
             // 
@@ -165,7 +165,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1285, 703);
-            this.ControlBox = false;
             this.Controls.Add(this.pnl_Peoduct_List);
             this.Controls.Add(this.dgv_Product_List);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

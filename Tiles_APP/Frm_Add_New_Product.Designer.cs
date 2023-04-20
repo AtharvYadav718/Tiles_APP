@@ -158,7 +158,7 @@
             this.dtp_Date.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Date.Location = new System.Drawing.Point(905, 60);
             this.dtp_Date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtp_Date.MaxDate = new System.DateTime(2023, 1, 10, 0, 0, 0, 0);
+            this.dtp_Date.MaxDate = new System.DateTime(2023, 4, 17, 0, 0, 0, 0);
             this.dtp_Date.MinDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             this.dtp_Date.Name = "dtp_Date";
             this.dtp_Date.Size = new System.Drawing.Size(321, 39);

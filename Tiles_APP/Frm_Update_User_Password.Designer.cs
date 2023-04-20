@@ -170,7 +170,7 @@
             this.btn_Update_User.BackColor = System.Drawing.Color.LightSalmon;
             this.btn_Update_User.Font = new System.Drawing.Font("Calisto MT", 18F, System.Drawing.FontStyle.Bold);
             this.btn_Update_User.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Update_User.Location = new System.Drawing.Point(460, 604);
+            this.btn_Update_User.Location = new System.Drawing.Point(498, 604);
             this.btn_Update_User.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Update_User.Name = "btn_Update_User";
             this.btn_Update_User.Size = new System.Drawing.Size(321, 71);

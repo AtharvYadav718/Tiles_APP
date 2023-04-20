@@ -376,6 +376,13 @@ namespace Tiles_APP
             obj.Only_Numeric(sender,e);
         }
 
+        private void btn_All_Rate_Click(object sender, EventArgs e)
+        {
+            Frm_Product_List Obj = new Frm_Product_List();
+            Obj.Show();
+            this.Hide();
+        }
+
         void Clear_Control()
         {
             tb_Customer_ID.Clear();
